@@ -1,3 +1,4 @@
+
 from django.utils import timezone
 from .models import *
 from django.shortcuts import render, get_object_or_404
@@ -10,5 +11,4 @@ from django.db.models import Sum
 def home(request):
    return render(request, 'volunteer_activity/home.html',
                  {'volunteer_activity': home})
-
 
