@@ -11,3 +11,4 @@ def home(request):
    return render(request, 'volunteer_activity/home.html',
                  {'volunteer_activity': home})
 
+
