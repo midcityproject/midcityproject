@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.container {
+    width: 100%;
+    border: 0px solid gray;
+    font-family: "Segoe UI";
+}
+
+header{
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+    font-family: "Rockwell";
+}
+footer{
+    padding: 1em;
+    color: white;
+    background-color: black;
+    
+    width: 100%;
+    text-align: center;
+    position:fixed;
+    bottom:0px;
+}
+
+nav {
+    float: top;
+    margin: 0;
+    padding: 1em;
+  
+}
+
+ 
+nav a {
+    text-decoration: none;
+}
+
+
+ 
+article {
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 2em;    
+    
+}
+
+article h1 {
+    text-align: center;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<header>
+   <h1>MID - CITY GIVES BACK</h1>
+</header>
+  
+<nav>
+  <a href="{% url 'volunteer_activity:home' %}">Home</a> |
+  <a href="{% url 'volunteer_activity:aboutus' %}">About Us</a> |
+  <a href="{% url 'volunteer_activity:events' %}">Events</a> |
+  <a href="{% url 'volunteer_activity:tracking' %}">Tracking</a> |
+  <a href="{% url 'volunteer_activity:contactus' %}">Contact Us</a>
+    
+</nav>
+
+<article>
+  <h1>About Us</h1>
+  <p>Mid-City Gives Back is a volunteer portal organization that helps volunteers to signup and track their volunteering hours. Mid-city  project is being handled by team 4 from MSD class</p>
+  <p>This is just a test document. Getting ready to make the first push. This about us page contains description about the main features of the project and why this organization is started. This also includes the mission statement of the organization and also covers the different types of organiztions that are a part of our Mid city organization</p>
+</article>
+
+<footer>Copyright &copy; 2017 - Mid city Project - Team 4</footer>
+
+</div>
+
+</body>
+</html>

@@ -62,16 +62,16 @@ article h1 {
 </header>
   
 <nav>
-  <a href="C:\python\midcity\home.html">Home</a> |
-  <a href="C:\python\midcity\aboutus.html">About Us</a> |
-  <a href="C:\python\midcity\events.html">Events</a> |
-  <a href="C:\python\midcity\tracking.html">Tracking</a> |
-  <a href="C:\python\midcity\contactus.html">Contact Us</a>   
+  <a href="{% url 'volunteer_activity:home' %}">Home</a> |
+  <a href="{% url 'volunteer_activity:aboutus' %}">About Us</a> |
+  <a href="{% url 'volunteer_activity:events' %}">Events</a> |
+  <a href="{% url 'volunteer_activity:tracking' %}">Tracking</a> |
+  <a href="{% url 'volunteer_activity:contactus' %}">Contact Us</a>
     
 </nav>
 
 <article>
-  <h1>About Us</h1>
+  <h1>Tracking</h1>
   <p>Mid-City Gives Back is a volunteer portal organization that helps volunteers to signup and track their volunteering hours. Mid-city  project is being handled by team 4 from MSD class</p>
   <p>This is just a test document. Getting ready to make the first push. This about us page contains description about the main features of the project and why this organization is started. This also includes the mission statement of the organization and also covers the different types of organiztions that are a part of our Mid city organization</p>
 </article>
