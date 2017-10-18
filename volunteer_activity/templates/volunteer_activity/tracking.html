@@ -38,7 +38,7 @@
 
      <div class="collapse navbar-collapse" id="navbarSupportedContent">
        <ul class="navbar-nav mr-auto">
-         <li class="nav-item active">            <!-- change nav-item active to that particular page -->
+         <li class="nav-item">            <!-- change nav-item active to that particular page -->
            <a class="nav-link" href="{% url 'volunteer_activity:home' %}">Home </a>
          </li>
          <li class="nav-item">
@@ -47,7 +47,7 @@
          <li class="nav-item">
            <a class="nav-link" href="{% url 'volunteer_activity:events' %}">Events</a>
          </li>
-         <li class="nav-item">
+         <li class="nav-item active">
            <a class="nav-link" href="{% url 'volunteer_activity:tracking' %}">Tracking</a>
          </li>
          <li class="nav-item">
@@ -68,38 +68,23 @@
    <div class="container">
      <div class="row">
         <div class="col">
-          <br><br><h1 style="text-align:center;">Events</h1><br>
+          <br><br><h1 style="text-align:center;">Tracking</h1><br>
         </div>
 
         <div class="w-100"></div>
 
         <div style="text-align:center;" class="col text-center" id="link-tags">
-          <p>list of events</p><br> <!-- List of events, linked to event detials page. -->
+          <p>Hours tracking table</p><br> <!-- List of events, linked to event detials page. -->
         </div>
 
         <div class="w-100"></div>
 
-        <div class="col text-center">
-          <button type="button" class="btn btn-primary center-block">View All Events</button><br><br>
+        <div class="col text-center" id="edit-hours">
+          <button type="button" class="btn btn-primary center-block">Edit Hours</button><br><br>
         </div>
-     </div>
-     <div class="row">
-       <div class="col">
-         <br><br><h1 style="text-align:center;">Tracking</h1>
-       </div>
-
-       <div class="w-100"></div>
-
-       <div style="text-align:center;" class="col text-center" id="traking-data">
-         <br><p>tracking data</p><br>
-       </div>
-
-       <div class="w-100"></div>
-
-       <div class="col text-center">
-         <button type="button" class="btn btn-primary center-block">Track My Hours</button><br><br>
-       </div>
-
+        <div class="col text-center" id="save-tracking-changes">
+          <button type="button" class="btn btn-success center-block">Save</button><br><br>
+        </div>
      </div>
    </div>
 

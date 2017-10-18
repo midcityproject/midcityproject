@@ -38,7 +38,7 @@
 
      <div class="collapse navbar-collapse" id="navbarSupportedContent">
        <ul class="navbar-nav mr-auto">
-         <li class="nav-item active">            <!-- change nav-item active to that particular page -->
+         <li class="nav-item">            <!-- change nav-item active to that particular page -->
            <a class="nav-link" href="{% url 'volunteer_activity:home' %}">Home </a>
          </li>
          <li class="nav-item">
@@ -47,7 +47,7 @@
          <li class="nav-item">
            <a class="nav-link" href="{% url 'volunteer_activity:events' %}">Events</a>
          </li>
-         <li class="nav-item">
+         <li class="nav-item active">
            <a class="nav-link" href="{% url 'volunteer_activity:tracking' %}">Tracking</a>
          </li>
          <li class="nav-item">
@@ -55,8 +55,8 @@
          </li>
        </ul>
        <form class="form-inline my-2 my-lg-0">
-          <a class="btn btn-outline-primary btn-sm" style="margin-right:10px;" href="{% url 'volunteer_activity:register' %}" role="button">Register</a>
-          <a class="btn btn-outline-success btn-sm" href="{% url 'volunteer_activity:login' %}" role="button">Sign in</a>
+          <a class="btn btn-outline-primary btn-sm" style="margin-right:10px;" href="{% url 'volunteer_activity:home' %}" role="button">Register</a>
+          <a class="btn btn-outline-success btn-sm" href="{% url 'volunteer_activity:home' %}" role="button">Sign in</a>
            <!-- <button class="btn btn-primary my-2 my-sm-0" href="{% url 'volunteer_activity:home' %}">Sign Up</button> -->
            <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
        </form>
@@ -68,38 +68,20 @@
    <div class="container">
      <div class="row">
         <div class="col">
-          <br><br><h1 style="text-align:center;">Events</h1><br>
+          <br><br><h1 style="text-align:center;">Log in</h1><br>
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+
+            <button type="submit" class="btn btn-primary center-block">Submit</button>
+          </form>
         </div>
-
-        <div class="w-100"></div>
-
-        <div style="text-align:center;" class="col text-center" id="link-tags">
-          <p>list of events</p><br> <!-- List of events, linked to event detials page. -->
-        </div>
-
-        <div class="w-100"></div>
-
-        <div class="col text-center">
-          <button type="button" class="btn btn-primary center-block">View All Events</button><br><br>
-        </div>
-     </div>
-     <div class="row">
-       <div class="col">
-         <br><br><h1 style="text-align:center;">Tracking</h1>
-       </div>
-
-       <div class="w-100"></div>
-
-       <div style="text-align:center;" class="col text-center" id="traking-data">
-         <br><p>tracking data</p><br>
-       </div>
-
-       <div class="w-100"></div>
-
-       <div class="col text-center">
-         <button type="button" class="btn btn-primary center-block">Track My Hours</button><br><br>
-       </div>
-
      </div>
    </div>
 
