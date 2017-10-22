@@ -2,14 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="844df91a-b037-423d-b294-d20214a94d31" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/volunteer_activity/forms.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/base.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/volunteer_activity/admin.py" afterPath="$PROJECT_DIR$/volunteer_activity/admin.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/volunteer_activity/models.py" afterPath="$PROJECT_DIR$/volunteer_activity/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mid_city/settings.py" afterPath="$PROJECT_DIR$/mid_city/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mid_city/urls.py" afterPath="$PROJECT_DIR$/mid_city/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/volunteer_activity/forms.py" afterPath="$PROJECT_DIR$/volunteer_activity/forms.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/volunteer_activity/templates/registration/login.html" afterPath="$PROJECT_DIR$/volunteer_activity/templates/registration/login.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/aboutus.html" afterPath="$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/aboutus.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/add_event.html" afterPath="$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/add_event.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/contactus.html" afterPath="$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/contactus.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/edit_event.html" afterPath="$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/edit_event.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/event_details.html" afterPath="$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/event_details.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/events.html" afterPath="$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/events.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/home.html" afterPath="$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/home.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/login.html" afterPath="$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/login.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/pwd_recover.html" afterPath="$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/pwd_recover.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/register.html" afterPath="$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/register.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/tracking.html" afterPath="$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/tracking.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/volunteer_activity/views.py" afterPath="$PROJECT_DIR$/volunteer_activity/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/volunteer_activity/urls.py" afterPath="$PROJECT_DIR$/volunteer_activity/urls.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,75 +33,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/home.html">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/volunteer_activity/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="82" column="21" lean-forward="false" selection-start-line="76" selection-start-column="4" selection-end-line="104" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="events.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/events.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="11" lean-forward="true" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
+            <state relative-caret-position="915">
+              <caret line="61" column="43" lean-forward="true" selection-start-line="61" selection-start-column="43" selection-end-line="61" selection-end-column="43" />
               <folding>
-                <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#0#28#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/volunteer_activity/templates/registration/login.html">
+      <file leaf-file-name="forms.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/volunteer_activity/forms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="799">
-              <caret line="97" column="0" lean-forward="true" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/login.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-332">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="register.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/register.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tracking.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/tracking.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="469">
-              <caret line="96" column="0" lean-forward="true" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/volunteer_activity/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="620">
-              <caret line="64" column="19" lean-forward="true" selection-start-line="64" selection-start-column="19" selection-end-line="64" selection-end-column="19" />
+            <state relative-caret-position="270">
+              <caret line="18" column="68" lean-forward="false" selection-start-line="18" selection-start-column="68" selection-end-line="18" selection-end-column="68" />
               <folding>
-                <element signature="e#0#28#0" expanded="true" />
+                <element signature="e#0#24#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -109,11 +69,54 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/volunteer_activity/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="26" column="11" lean-forward="true" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/home.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1682">
+              <caret line="133" column="32" lean-forward="true" selection-start-line="133" selection-start-column="32" selection-end-line="133" selection-end-column="32" />
+              <folding>
+                <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h1#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="apps.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/volunteer_activity/apps.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/volunteer_activity/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="21" lean-forward="false" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+            <state relative-caret-position="300">
+              <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -121,13 +124,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="forms.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/volunteer_activity/forms.py">
+      <file leaf-file-name="tests.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/volunteer_activity/tests.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="49" lean-forward="true" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/volunteer_activity/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="30" lean-forward="true" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
               <folding>
-                <element signature="e#0#24#0" expanded="true" />
+                <element signature="e#1#34#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -139,8 +152,14 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>logout</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -148,17 +167,28 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/mid_city/settings.py" />
-        <option value="$PROJECT_DIR$/mid_city/urls.py" />
-        <option value="$PROJECT_DIR$/volunteer_activity/urls.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/volunteer_activity/admin.py" />
-        <option value="$PROJECT_DIR$/volunteer_activity/views.py" />
         <option value="$PROJECT_DIR$/volunteer_activity/forms.py" />
-        <option value="$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/tracking.html" />
+        <option value="$PROJECT_DIR$/volunteer_activity/admin.py" />
         <option value="$PROJECT_DIR$/volunteer_activity/models.py" />
-        <option value="$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/home.html" />
+        <option value="$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/base.html.py" />
+        <option value="$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/aboutus.html" />
+        <option value="$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/add_event.html" />
+        <option value="$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/contactus.html" />
+        <option value="$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/edit_event.html" />
+        <option value="$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/event_details.html" />
         <option value="$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/events.html" />
+        <option value="$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/tracking.html" />
+        <option value="$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/register.html" />
+        <option value="$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/pwd_recover.html" />
+        <option value="$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/login.html" />
+        <option value="$PROJECT_DIR$/volunteer_activity/templates/registration/login.html" />
+        <option value="$PROJECT_DIR$/mid_city/settings.py" />
+        <option value="$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/base.html" />
+        <option value="$PROJECT_DIR$/mid_city/urls.py" />
+        <option value="$PROJECT_DIR$/volunteer_activity/views.py" />
+        <option value="$PROJECT_DIR$/volunteer_activity/urls.py" />
+        <option value="$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/home.html" />
       </list>
     </option>
   </component>
@@ -168,10 +198,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="234" />
-    <option name="y" value="53" />
-    <option name="width" value="1249" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="139" />
+    <option name="y" value="56" />
+    <option name="width" value="1551" />
     <option name="height" value="957" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -227,6 +257,12 @@
               <item name="mid_city" type="b2602c69:ProjectViewProjectNode" />
               <item name="mid_city" type="462c0819:PsiDirectoryNode" />
               <item name="volunteer_activity" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mid_city" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mid_city" type="462c0819:PsiDirectoryNode" />
+              <item name="volunteer_activity" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -254,6 +290,7 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -310,10 +347,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="234" y="53" width="1249" height="957" extended-state="1" />
+    <frame x="139" y="56" width="1551" height="957" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26677713" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21338634" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -345,34 +382,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/mid_city/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1665">
-          <caret line="111" column="0" lean-forward="false" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/volunteer_activity/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="29" column="22" lean-forward="false" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/volunteer_activity/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/volunteer_activity/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -600,42 +609,90 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/aboutus.html">
+    <entry file="file://$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/base.html.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="188">
+          <caret line="64" column="0" lean-forward="true" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/add_event.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="14" lean-forward="true" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/contactus.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="300">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/volunteer_activity/tests.py">
+    <entry file="file://$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/edit_event.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="120">
+          <caret line="8" column="14" lean-forward="true" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/volunteer_activity/apps.py">
+    <entry file="file://$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/event_details.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="195">
+          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mid_city/settings.py">
+    <entry file="file://$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/aboutus.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1498">
-          <caret line="111" column="0" lean-forward="false" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
+        <state relative-caret-position="15">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/events.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="49" lean-forward="true" selection-start-line="31" selection-start-column="49" selection-end-line="31" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/tracking.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mid_city/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/volunteer_activity/templates/registration/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/volunteer_activity/static/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="16" lean-forward="true" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
           <folding />
         </state>
       </provider>
@@ -650,44 +707,80 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mid_city/wsgi.py">
+    <entry file="file://$PROJECT_DIR$/mid_city/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        <state relative-caret-position="428">
+          <caret line="29" column="27" lean-forward="true" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/edit_event.html">
+    <entry file="file://$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-580">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="390">
+          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/add_event.html">
+    <entry file="file://$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/pwd_recover.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="49" lean-forward="true" selection-start-line="29" selection-start-column="49" selection-end-line="29" selection-end-column="49" />
+        <state relative-caret-position="225">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="870">
+          <caret line="58" column="0" lean-forward="true" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/volunteer_activity/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="685">
-          <caret line="57" column="0" lean-forward="true" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+        <state relative-caret-position="165">
+          <caret line="11" column="30" lean-forward="true" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
           <folding>
             <element signature="e#1#34#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/tracking.html">
+    <entry file="file://$PROJECT_DIR$/volunteer_activity/tests.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="469">
-          <caret line="96" column="0" lean-forward="true" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/volunteer_activity/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="915">
+          <caret line="61" column="43" lean-forward="true" selection-start-line="61" selection-start-column="43" selection-end-line="61" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/volunteer_activity/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="68" lean-forward="false" selection-start-line="18" selection-start-column="68" selection-end-line="18" selection-end-column="68" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/volunteer_activity/apps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -702,75 +795,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/volunteer_activity/forms.py">
+    <entry file="file://$PROJECT_DIR$/volunteer_activity/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="49" lean-forward="true" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/volunteer_activity/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="620">
-          <caret line="64" column="19" lean-forward="true" selection-start-line="64" selection-start-column="19" selection-end-line="64" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="82" column="21" lean-forward="false" selection-start-line="76" selection-start-column="4" selection-end-line="104" selection-end-column="10" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/events.html">
+    <entry file="file://$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/base.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="26" column="11" lean-forward="true" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
-          <folding>
-            <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/volunteer_activity/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="21" lean-forward="false" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+        <state relative-caret-position="300">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/volunteer_activity/templates/registration/login.html">
+    <entry file="file://$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="97" column="0" lean-forward="true" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-332">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="1682">
+          <caret line="133" column="32" lean-forward="true" selection-start-line="133" selection-start-column="32" selection-end-line="133" selection-end-column="32" />
+          <folding>
+            <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h1#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
