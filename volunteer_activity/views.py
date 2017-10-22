@@ -9,8 +9,10 @@ from django.db.models import Sum
 
 
 def home(request):
-   return render(request, 'volunteer_activity/home.html',
-                 {'volunteer_activity': home})
+    users = User.objects.all()
+    events = Event.objects.all()
+    return render(request, 'volunteer_activity/home.html',
+                  {'volunteer_activity': home, 'users': users, 'events': events, })
 
 def aboutus(request):
    return render(request, 'volunteer_activity/aboutus.html',
@@ -29,12 +31,14 @@ def contactus(request):
                  {'volunteer_activity': contactus})
 
 def events(request):
-   return render(request, 'volunteer_activity/events.html',
-                 {'volunteer_activity': events})
+    events = Event.objects.all()
+    return render(request, 'volunteer_activity/events.html',
+                 {'volunteer_activity': events, 'events': events, })
 
 def tracking(request):
-   return render(request, 'volunteer_activity/tracking.html',
-                 {'volunteer_activity': tracking})
+    userevents = UserEvent.objects.all()
+    return render(request, 'volunteer_activity/tracking.html',
+                 {'volunteer_activity': tracking, 'userevents': userevents,})
 
 def event_details(request):
    return render(request, 'volunteer_activity/event_details.html',

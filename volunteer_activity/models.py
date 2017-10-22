@@ -5,7 +5,7 @@ from django.contrib.auth.models import User
 class User(models.Model):
     name = models.CharField(max_length=50)
     address = models.CharField(max_length=200)
-    user_number = models.IntegerField(blank=False, null=False)
+    user_number = models.IntegerField(blank=False, null=False, primary_key=True)
     city = models.CharField(max_length=50)
     state = models.CharField(max_length=50)
     zipcode = models.CharField(max_length=10)
@@ -14,8 +14,8 @@ class User(models.Model):
     event_name = models.CharField(max_length=200)
     hours_volunteered = models.CharField(max_length=10)
     active_inactive = models.CharField(max_length=10)
-    created_date = models.DateTimeField(
-        default=timezone.now)
+    user_type = models.CharField(max_length=10, default = "volunteer")
+    created_date = models.DateTimeField(default=timezone.now)
     updated_date = models.DateTimeField(auto_now_add=True)
 
 
@@ -32,7 +32,9 @@ class User(models.Model):
 
 
 class Event(models.Model):
-    volunteer = models.ForeignKey(User)
+    event_num = models.IntegerField(blank=False, null=False, primary_key=True)
+    #event_num = models.ManyToManyField(event_num, through='UserEvent')
+    organization = models.CharField(max_length=200)
     type= models.CharField(max_length=50)
     location = models.CharField(max_length=200)
     description = models.CharField(max_length=200)
@@ -51,5 +53,19 @@ class Event(models.Model):
         self.save()
 
     def __str__(self):
-        return str(self.volunteer)
+        return str(self.event_num)
 
+
+class UserEvent(models.Model):
+    user_num = models.ForeignKey(User)
+    event_num = models.ForeignKey(Event)
+    hours = models.CharField(max_length=10)
+
+    def created(self):
+        self.save()
+
+    def updated(self):
+        self.save()
+
+    def __str__(self):
+        return str(self.event_num)
