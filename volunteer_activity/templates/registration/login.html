@@ -1,14 +1,32 @@
-{% extends "volunteer_activity/home.html" %}
-
-{% block title %}Login{% endblock %}
+{% extends "volunteer_activity/base.html" %}
 
 {% block content %}
-  <h2>Login</h2>
-  <form method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit">Login</button>
-  </form>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <br><br><h1>Log in</h1><br>
+                {% if form.errors %}
+                    <p>Your username and password didn't match. Please try again.</p>
+                {% endif %}
+                <div class="form-group">
+                <form method="post" action="{% url 'login' %}">
+                {% csrf_token %}
+                     <table>
+                         <tr>
+                             <td>{{ form.username.label_tag }}</td>
+                             <td>{{ form.username }}</td>
+                         </tr>
+                         <tr>
+                             <td>{{ form.password.label_tag }}</td>
+                             <td>{{ form.password }}</td>
+                         </tr>
+                    </table>
+                <input type="submit" value="login"/>
+                <input type="hidden" name="next" value="{{ next }}"/>
+                </form>
+            </div>
+            </div>
+        </div>
+    </div>
+
 {% endblock %}
-
-
