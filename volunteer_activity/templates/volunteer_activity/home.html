@@ -49,6 +49,7 @@
           <button type="button" class="btn btn-primary center-block">View All Events</button><br><br>
         </div>
      </div>
+   </div>
      <div class="row">
        <div class="col">
          <br><br><h1 style="text-align:center;">Volunteer Activity</h1>
@@ -85,9 +86,26 @@
        <div class="col text-center">
          <button type="button" class="btn btn-primary center-block">Track My Hours</button><br><br>
        </div>
+     </div>
+
+    {% if user.is_authenticated %}
+    <div class="row">
+       <div class="col">
+         <br><br><h1 style="text-align:center;">Manage Activity and Reports</h1>
+       </div>
+
+       <div class="w-100"></div>
+
+
+       <div class="w-100"></div>
+
+       <div class="col text-center">
+         <button type="button" class="btn btn-primary center-block">View Reports</button><br><br>
+       </div>
 
      </div>
+    {% endif %}
    </div>
 
-
+   </div>
    {% endblock %}
