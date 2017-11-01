@@ -16,24 +16,16 @@
             <thead>
             <tr class="bg-info">
                 <th>Event Title</th>
-                <th>Category</th>
-                <th>Location</th>
                 <th>Description</th>
                 <th>Event Date</th>
-                <th>Event Time</th>
-                <th>Volunteers Needed</th>
             </tr>
             </thead>
             <tbody>
             {% for event in events %}
                 <tr>
                     <td>{{ event.organization }}</td>
-                    <td>{{ event.type }}</td>
-                    <td>{{ event.location }}</td>
                     <td>{{ event.description }}</td>
                     <td>{{ event.start_date }}</td>
-                    <td>{{ event.time }}</td>
-                    <td>{{ event.number_volunteers }}</td>
                 </tr>
             {% endfor %}
             </tbody>

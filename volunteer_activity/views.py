@@ -18,9 +18,9 @@ def aboutus(request):
    return render(request, 'volunteer_activity/aboutus.html',
                  {'volunteer_activity': aboutus})
 
-def login(request):
-   return render(request, 'volunteer_activity/login.html',
-                 {'volunteer_activity': login})
+def manage_activity(request):
+   return render(request, 'volunteer_activity/manage_activity.html',
+                 {'volunteer_activity': manage_activity})
 
 def register(request):
    return render(request, 'volunteer_activity/register.html',
