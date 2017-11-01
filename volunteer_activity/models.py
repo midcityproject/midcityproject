@@ -11,7 +11,7 @@ class User(models.Model):
     zipcode = models.CharField(max_length=10)
     email = models.EmailField(max_length=200)
     cell_phone = models.CharField(max_length=50)
-    event_name = models.CharField(max_length=200)
+    #event_name = models.CharField(max_length=200)
     hours_volunteered = models.CharField(max_length=10)
     active_inactive = models.CharField(max_length=10)
     user_type = models.CharField(max_length=10, default = "volunteer")
@@ -38,10 +38,11 @@ class Event(models.Model):
     type= models.CharField(max_length=50)
     location = models.CharField(max_length=200)
     description = models.CharField(max_length=200)
+    short_description = models.CharField(max_length=50)
     number_volunteers = models.CharField(max_length=10)
     status = models.CharField(max_length=50)
     start_date = models.DateField(default=timezone.now)
-    end_date = models.DateField(default=timezone.now, blank=True, null=True)
+    #end_date = models.DateField(default=timezone.now, blank=True, null=True)
     time = models.CharField(max_length=10)
 
     def created(self):
