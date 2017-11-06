@@ -42,7 +42,7 @@ def tracking(request):
 
 def event_details(request):
    return render(request, 'volunteer_activity/event_details.html',
-                 {'volunteer_activity': event_details})
+                 {'volunteer_activity': event_details,})
 
 def signup(request):
    return render(request, 'volunteer_activity/signup.html',
