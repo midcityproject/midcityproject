@@ -9,8 +9,8 @@ from django.db.models import Sum
 
 
 def home(request):
-    userevents = UserEvent.objects.filter(user_num=request.user.pk)
-    events = Event.objects.all()
+    userevents = UserEvent.objects.filter(user_num=request.user.pk).order_by('-event_num')[:5]
+    events = Event.objects.all().order_by('-start_date')[:5]
     return render(request, 'volunteer_activity/home.html',
                   {'volunteer_activity': home, 'events': events, 'userevents': userevents,})
 
@@ -42,20 +42,22 @@ def tracking(request):
 
 @login_required
 def tracking_edit(request, pk):
-    userevent= get_object_or_404(UserEvent, pk=pk)
+    userevents= get_object_or_404(UserEvent, pk=pk)
     if request.method == "POST":
         # update
-        form = UserEventForm(request.POST, instance=userevent)
+        form = UserEventForm(request.POST, instance=userevents)
+
         if form.is_valid():
-            userevent = form.save(commit=False)
+            userevents = form.save(commit=False)
             #userevents.updated_date = timezone.now()
-            userevent.save()
+            userevents.save()
             #userevents = UserEvent.objects.filter(created_date__lte=timezone.now())
+            userevents = UserEvent.objects.filter(user_num=request.user.pk)
             return render(request, 'volunteer_activity/tracking.html',
-                {'userevents': userevents})
+                {'volunteer_activity': tracking, 'userevents': userevents,})
     else:
         # edit
-        form = UserEventForm(instance=userevent)
+        form = UserEventForm(instance=userevents)
     return render(request, 'volunteer_activity/tracking_edit.html', {'form': form})
 
 
