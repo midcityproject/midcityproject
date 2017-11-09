@@ -4,15 +4,15 @@ from .models import *
 from django.shortcuts import render, get_object_or_404
 from django.shortcuts import redirect
 from django.contrib.auth.decorators import login_required
-#from .forms import *
+from .forms import *
 from django.db.models import Sum
 
 
 def home(request):
-    users = User.objects.all()
+    userevents = UserEvent.objects.filter(user_num=request.user.pk)
     events = Event.objects.all()
     return render(request, 'volunteer_activity/home.html',
-                  {'volunteer_activity': home, 'users': users, 'events': events, })
+                  {'volunteer_activity': home, 'events': events, 'userevents': userevents,})
 
 def aboutus(request):
    return render(request, 'volunteer_activity/aboutus.html',
@@ -34,11 +34,30 @@ def events(request):
     events = Event.objects.all()
     return render(request, 'volunteer_activity/events.html',
                  {'volunteer_activity': events, 'events': events, })
-
+@login_required
 def tracking(request):
-    userevents = UserEvent.objects.all()
+    userevents = UserEvent.objects.filter(user_num=request.user.pk)
     return render(request, 'volunteer_activity/tracking.html',
                  {'volunteer_activity': tracking, 'userevents': userevents,})
+
+@login_required
+def tracking_edit(request, pk):
+    userevent= get_object_or_404(UserEvent, pk=pk)
+    if request.method == "POST":
+        # update
+        form = UserEventForm(request.POST, instance=userevent)
+        if form.is_valid():
+            userevent = form.save(commit=False)
+            #userevents.updated_date = timezone.now()
+            userevent.save()
+            #userevents = UserEvent.objects.filter(created_date__lte=timezone.now())
+            return render(request, 'volunteer_activity/tracking.html',
+                {'userevents': userevents})
+    else:
+        # edit
+        form = UserEventForm(instance=userevent)
+    return render(request, 'volunteer_activity/tracking_edit.html', {'form': form})
+
 
 def event_details(request):
    return render(request, 'volunteer_activity/event_details.html',
