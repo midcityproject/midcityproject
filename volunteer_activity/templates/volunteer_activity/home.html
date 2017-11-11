@@ -3,7 +3,9 @@
    <!-- main content goes here -->
 
    <div class="container">
-
+        {% if user.is_authenticated %}
+            <h2>Welcome {{ user.username }}</h2>
+        {% endif %}
         <div class="row">
             <div class="col">
                 <br><br><h1 style="text-align:center; font-family:Multicolore; font-size: 30px">Upcoming Events</h1><br>
@@ -25,7 +27,6 @@
                         <tr>
                             <td class="bg-light">{{ event.organization }}</td>
                             <td class="bg-light">{{ event.start_date }}</td>
-
                         </tr>
                     {% endfor %}
                     </tbody>
@@ -46,7 +47,7 @@
        {% if user.is_authenticated %}
         <div class="row">
             <div class="col">
-                <br><br><h1 style="text-align:center;font-family:Multicolore; font-size: 30px">My Activity</h1><br>
+                <br><br><h1 style="text-align:center;font-family:Multicolore; font-size: 30px">My Activity - {{ user.username }}</h1><br>
             </div>
 
             <div class="w-100"></div>

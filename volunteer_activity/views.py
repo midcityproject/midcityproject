@@ -1,4 +1,3 @@
-
 from django.utils import timezone
 from .models import *
 from django.shortcuts import render, get_object_or_404
@@ -6,7 +5,6 @@ from django.shortcuts import redirect
 from django.contrib.auth.decorators import login_required
 from .forms import *
 from django.db.models import Sum
-
 
 def home(request):
     userevents = UserEvent.objects.filter(user_num=request.user.pk).order_by('-event_num')[:5]
@@ -19,8 +17,10 @@ def aboutus(request):
                  {'volunteer_activity': aboutus})
 
 def manage_activity(request):
-   return render(request, 'volunteer_activity/manage_activity.html',
-                 {'volunteer_activity': manage_activity})
+    users = User.objects.all()
+    userevents = UserEvent.objects.all()
+    return render(request, 'volunteer_activity/manage_activity.html',
+                 {'volunteer_activity': manage_activity, 'users': users,'userevents': userevents, })
 
 def register(request):
    return render(request, 'volunteer_activity/register.html',
@@ -38,8 +38,7 @@ def events(request):
 def tracking(request):
     userevents = UserEvent.objects.filter(user_num=request.user.pk)
     return render(request, 'volunteer_activity/tracking.html',
-                 {'volunteer_activity': tracking, 'userevents': userevents,})
-
+                 {'volunteer_activity': tracking, 'userevents': userevents, })
 @login_required
 def tracking_edit(request, pk):
     userevents= get_object_or_404(UserEvent, pk=pk)

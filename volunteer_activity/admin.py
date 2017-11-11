@@ -1,11 +1,9 @@
 from django.contrib import admin
-from .models import User, Event, UserEvent
+from .models import Profile, Event, UserEvent
 
-#class UserList(admin.ModelAdmin):
- #   list_display = ('user_number', 'name', 'city', 'cell_phone')
-  #  list_filter = ('user_number', 'name', 'city')
-   # search_fields = ('user_number', 'name')
-    #ordering = ['hours_volunteered']
+
+class ProfileAdmin(admin.ModelAdmin):
+    list_display = ('user', 'address', 'city', 'state', 'zipcode', 'cell_phone', 'active_inactive', 'created_date', )
 
 class EventList(admin.ModelAdmin):
     list_display = ('event_num', 'type', 'location', 'description')
@@ -20,7 +18,7 @@ class UserEventList(admin.ModelAdmin):
     ordering = ['event_num']
 
 
-#admin.site.register(User, UserList)
+admin.site.register(Profile, ProfileAdmin)
 admin.site.register(Event, EventList)
 admin.site.register(UserEvent, UserEventList)
 

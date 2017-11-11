@@ -14,9 +14,12 @@ urlpatterns = [
     url(r'^tracking/$', views.tracking, name='tracking'),
     url(r'^tracking/(?P<pk>\d+)/edit/$', views.tracking_edit, name='tracking_edit'),
     url(r'^manage_activity/$', views.manage_activity, name='manage_activity'),
+   # url(r'^manage_activity_volunteer_activity_edit/(?P<pk>\d+)/edit/$', views.manage_activity_volunteer_activity_edit, name='manage_activity_volunteer_activity_edit'),
+    #url(r'^manage_activity_volunteer_edit/(?P<pk>\d+)/edit/$', views.manage_activity_volunteer_edit, name='manage_activity_volunteer_edit'),
     url(r'^event_details/$', views.event_details, name='event_details'),
     url(r'^signup/$', views.signup, name='signup'),
     url(r'^add_event/$', views.add_event, name='add_event'),
     url(r'^edit_event/$', views.edit_event, name='edit_event'),
     url(r'^pwd_recover/$', views.pwd_recover, name='pwd_recover'),
+
     ]
