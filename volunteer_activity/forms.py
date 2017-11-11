@@ -1,10 +1,15 @@
 from django import forms
-from .models import User, Event, UserEvent
+from .models import User, Profile, Event, UserEvent
 
-#class UserForm(forms.ModelForm):
- #   class Meta:
-  #      model = User
-   #     fields = ('name', 'city', 'state', 'hours_volunteered', )
+class UserEditForm(forms.ModelForm):
+    class Meta:
+        model = User
+        fields = ('first_name', 'last_name', 'email')
+
+class ProfileEditForm(forms.ModelForm):
+    class Meta:
+        model = Profile
+        fields = ('user', 'address', 'city', 'state', 'zipcode', 'cell_phone', 'active_inactive', 'created_date',)
 
 class EventForm(forms.ModelForm):
     class Meta:
