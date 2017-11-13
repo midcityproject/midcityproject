@@ -1,23 +1,48 @@
 {% extends "volunteer_activity/base.html" %}
 
 {% block content %}
-   <div class="container">
-     <div class="row">
-        <div class="col">
-          <br><br><h1 style="text-align:center;">Event Details</h1><br>
-        </div>
-        <div class="w-100"></div>
 
-          <div class="w-75 mx-auto">
+<div class="container">
+  <div class="row">
+     <div class="col">
+       <br><br><h1  style="text-align:center; font-size:25px; font-family:LemonMilk;">Event Details</h1><br>
+     </div>
+     <div class="w-100"></div>
 
-        </div>
-            <a href="{% url 'volunteer_activity:event_details' %}" class="btn btn-outline-info">View details</a>
-            <a href="{% url 'volunteer_activity:signup' %}" class="btn btn-outline-success">Sign Up</a>
 
-          </div>
-        </div>
-       <br>
-      </div>
+         <div class="w-75 mx-auto">
+           <div class="card w-100 bg-dark text-secondary mb-3">
+             <div class="card-header card-title bg-dark text-info">{{ event.status }}
+             </div>
+             <div class="card-body"><br>
+             <h2 style="font-size:25px; font-family:LemonMilk;" class="card-title text-secondary">{{ event.organization }}</h4><br>
+             <dl class="row">
+                   <dt class="col-sm-3 card-text font-weight-bold">Category</dt>
+                   <dd class="col-sm-9 card-text">{{ event.type}}</dd>
+                   <dt class="col-sm-3 card-text font-weight-bold">Loction:</dt>
+                   <dd class="col-sm-9 card-text">{{ event.location}}</dd>
+                   <dt class="col-sm-3 card-text font-weight-bold">Volunteers needed:</dt>
+                   <dd class="col-sm-9 card-text">{{ event.number_volunteers}}</dd>
+                   <dt class="col-sm-3 card-text font-weight-bold">Start Date:</dt>
+                   <dd class="col-sm-9 card-text">{{ event.start_date}}</dd>
+                   <dt class="col-sm-3 card-text font-weight-bold">Time:</dt>
+                   <dd class="col-sm-9 card-text">{{ event.time}}</dd>
+                   <dt class="col-sm-3 card-text font-weight-bold">Description:</dt>
+                   <dd class="col-sm-9 card-text">{{ event.description}}</dd>
+              </dl><br>
+
+             <!-- <a href="{% url 'volunteer_activity:event_details' event.event_num %}" class="btn btn-outline-info">View details</a> -->
+             <a href="{% url 'volunteer_activity:signup' %}" class="btn btn-info btn-raised center-block">Sign Up for the event</a>
+
+           </div><br>
+         </div>
+        <br>
+       </div>
+
+ </div>
+
+
+  </div>
 
 
 {% endblock %}

@@ -5,6 +5,31 @@ from django.shortcuts import redirect
 from django.contrib.auth.decorators import login_required
 from .forms import *
 from django.db.models import Sum
+from .models import Event
+from django.views import generic
+
+
+# def events(request):
+#     events = Event.objects.all()
+#     return render(request, 'volunteer_activity/events.html',
+#                             {'events': events,})
+#
+# def event_details(request, pk):
+#     events = get_object_or_404(Event, pk=pk)
+#     return render(request, 'volunteer_activity/event_details.html',
+#                             {'events': events,})
+
+class IndexView(generic.ListView):
+     template_name = 'volunteer_activity/events.html'
+     model = Event
+
+     def get_quereyset(self):
+         return Event.objects.all()
+
+class DetailView(generic.DetailView):
+    model = Event
+    template_name = 'volunteer_activity/event_details.html'
+
 
 def home(request):
     userevents = UserEvent.objects.filter(user_num=request.user.pk).order_by('-event_num')[:5]
@@ -30,10 +55,10 @@ def contactus(request):
    return render(request, 'volunteer_activity/contactus.html',
                  {'volunteer_activity': contactus})
 
-def events(request):
-    events = Event.objects.all()
-    return render(request, 'volunteer_activity/events.html',
-                 {'volunteer_activity': events, 'events': events, })
+# def events(request):
+#     events = Event.objects.all()
+#     return render(request, 'volunteer_activity/events.html',
+#                  {'volunteer_activity': events, 'events': events, })
 @login_required
 def tracking(request):
     userevents = UserEvent.objects.filter(user_num=request.user.pk)
@@ -60,9 +85,10 @@ def tracking_edit(request, pk):
     return render(request, 'volunteer_activity/tracking_edit.html', {'form': form})
 
 
-def event_details(request):
-   return render(request, 'volunteer_activity/event_details.html',
-                 {'volunteer_activity': event_details,})
+# def event_details(request, pk):
+#     event = get_object_or_404 (Event, slug=event)
+#    return render(request, 'volunteer_activity/event_details.html',
+#                  {'volunteer_activity': events,})
 
 def signup(request):
    return render(request, 'volunteer_activity/signup.html',

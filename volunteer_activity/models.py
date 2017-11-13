@@ -2,6 +2,7 @@ from django.db import models
 from django.utils import timezone
 from django.contrib.auth.models import User
 from django.conf import settings
+# from django.core.urlresolvers import reverse
 
 
 class Profile(models.Model):
@@ -36,12 +37,14 @@ class Event(models.Model):
         self.start_date = timezone.now()
         self.save()
 
+
+
     def updated(self):
         self.end_date = timezone.now()
         self.save()
 
     def __str__(self):
-        return str(self.event_num)
+        return self.event_num
 
 
 class UserEvent(models.Model):
