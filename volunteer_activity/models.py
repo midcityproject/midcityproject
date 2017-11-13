@@ -44,7 +44,7 @@ class Event(models.Model):
         self.save()
 
     def __str__(self):
-        return self.event_num
+        return str(self.event_num)
 
 
 class UserEvent(models.Model):
