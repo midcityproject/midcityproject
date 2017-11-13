@@ -5,20 +5,20 @@
    <div class="container">
      <div class="row">
         <div class="col">
-          <br><br><h1 style="text-align:center;">Events</h1><br>
+          <br><br><h1 style="text-align:center; font-size:25px; font-family:LemonMilk;">Events</h1><br>
         </div>
         <div class="w-100"></div>
 
-            {% for event in events %}
+            {% for event in object_list %}
             <div class="w-75 mx-auto">
-              <div class="card w-100 bg-light mb-3">
-                <div class="card-header alert-info">{{ event.start_date }}
+              <div class="card w-100 bg-dark text-secondary mb-3">
+                <div class="card-header bg-dark text-secondary">{{ event.start_date }}
                 </div>
                 <div class="card-body">
-                <h4 class="card-title">{{ event.organization }}</h4>
+                <h4 class="card-title text-info">{{ event.organization }}</h4>
                 <p class="card-text">{{ event.description }}</p>
-                <a href="{% url 'volunteer_activity:event_details' %}" class="btn btn-outline-info">View details</a>
-                <a href="{% url 'volunteer_activity:signup' %}" class="btn btn-outline-success">Sign Up</a>
+                <a style="text-dark" href="{% url 'volunteer_activity:event_details' event.event_num %}" class="btn btn-raised btn-info">View details</a>
+                <a style="text-dark" href="{% url 'volunteer_activity:signup' %}" class="btn btn-raised btn-info">Sign Up</a>
 
               </div>
             </div>
