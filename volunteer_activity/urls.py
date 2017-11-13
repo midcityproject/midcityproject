@@ -1,5 +1,4 @@
 from django.conf.urls import url
-#from django.contrib.auth import views as auth_views
 from . import views
 
 urlpatterns = [
@@ -21,5 +20,6 @@ urlpatterns = [
     url(r'^add_event/$', views.add_event, name='add_event'),
     url(r'^edit_event/$', views.edit_event, name='edit_event'),
     url(r'^pwd_recover/$', views.pwd_recover, name='pwd_recover'),
+    	
 
     ]
