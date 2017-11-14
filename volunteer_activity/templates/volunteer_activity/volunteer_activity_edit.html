@@ -1,8 +1,8 @@
 {% extends 'volunteer_activity/base.html' %}
 
 {% block content %}
-    <h1>Edit Volunteer</h1>
-    <form method="POST" class="">{% csrf_token %}
+    <h1>Edit Volunteer Activity</h1>
+    <form method="POST" class="...">{% csrf_token %}
         {{ form.as_p }}
         <button type="submit" class="save btn btn-default">Update</button>
     </form>

@@ -55,9 +55,11 @@
          <li class="nav-item">
            <a class="nav-link" href="{% url 'volunteer_activity:tracking' %}">My Activity</a>
          </li>
+           {% if user.is_staff %}
            <li class="nav-item">
            <a class="nav-link" href="{% url 'volunteer_activity:manage_activity' %}">Manage Activity</a>
          </li>
+           {% endif %}
          <li class="nav-item">
            <a class="nav-link" href="{% url 'volunteer_activity:contactus' %}">Contact Us</a>
          </li>

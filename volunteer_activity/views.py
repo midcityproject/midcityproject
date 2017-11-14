@@ -30,7 +30,6 @@ class DetailView(generic.DetailView):
     model = Event
     template_name = 'volunteer_activity/event_details.html'
 
-
 def home(request):
     userevents = UserEvent.objects.filter(user_num=request.user.pk).order_by('-event_num')[:5]
     events = Event.objects.all().order_by('-start_date')[:5]
@@ -40,12 +39,141 @@ def home(request):
 def aboutus(request):
    return render(request, 'volunteer_activity/aboutus.html',
                  {'volunteer_activity': aboutus})
-
+######################### Manage Activity Page ######################
 def manage_activity(request):
     users = User.objects.all()
     userevents = UserEvent.objects.all()
+    events = Event.objects.all()
     return render(request, 'volunteer_activity/manage_activity.html',
-                 {'volunteer_activity': manage_activity, 'users': users,'userevents': userevents, })
+                 {'volunteer_activity': manage_activity, 'users': users,'userevents': userevents, 'events': events,})
+
+def volunteer_add(request):
+    if request.method == "POST":
+        form = UserEmployeeForm(request.POST)
+        if form.is_valid():
+            users = form.save(commit=False)
+            #investments.created_date = timezone.now()
+            users.save()
+            #investments = Investment.objects.filter(acquired_date__lte=timezone.now())
+            users = User.objects.all()
+            userevents = UserEvent.objects.all()
+            events = Event.objects.all()
+            return render(request, 'volunteer_activity/manage_activity.html',
+                          {'volunteer_activity': manage_activity, 'users': users, 'userevents': userevents,
+                           'events': events, })
+    else:
+        form = UserEmployeeForm()
+        # print("Else")
+    return render(request, 'volunteer_activity/volunteer_add.html', {'form': form})
+
+def volunteer_edit(request, pk):
+    users= get_object_or_404(User, pk=pk)
+    if request.method == "POST":
+        # update
+        form = UserEmployeeForm(request.POST, instance=users)
+
+        if form.is_valid():
+            users = form.save(commit=False)
+            #userevents.updated_date = timezone.now()
+            users.save()
+            #userevents = UserEvent.objects.filter(created_date__lte=timezone.now())
+            #userevents = UserEvent.objects.filter(user_num=pk)
+            users = User.objects.all()
+            userevents = UserEvent.objects.all()
+            events = Event.objects.all()
+            return render(request, 'volunteer_activity/manage_activity.html',
+                          {'volunteer_activity': manage_activity, 'users': users, 'userevents': userevents,
+                           'events': events, })
+    else:
+        # edit
+        form = UserEmployeeForm(instance=users)
+    return render(request, 'volunteer_activity/volunteer_edit.html', {'form': form})
+
+def volunteer_activity_add(request):
+    if request.method == "POST":
+        form = UserEventEmployeeForm(request.POST)
+        if form.is_valid():
+            userevents = form.save(commit=False)
+            #investments.created_date = timezone.now()
+            userevents.save()
+            #investments = Investment.objects.filter(acquired_date__lte=timezone.now())
+            users = User.objects.all()
+            userevents = UserEvent.objects.all()
+            events = Event.objects.all()
+            return render(request, 'volunteer_activity/manage_activity.html',
+                          {'volunteer_activity': manage_activity, 'users': users, 'userevents': userevents,
+                           'events': events, })
+    else:
+        form = UserEventEmployeeForm()
+        # print("Else")
+    return render(request, 'volunteer_activity/volunteer_activity_add.html', {'form': form})
+
+def volunteer_activity_edit(request, pk):
+    userevents= get_object_or_404(UserEvent, pk=pk)
+    if request.method == "POST":
+        # update
+        form = UserEventForm(request.POST, instance=userevents)
+
+        if form.is_valid():
+            userevents = form.save(commit=False)
+            #userevents.updated_date = timezone.now()
+            userevents.save()
+            #userevents = UserEvent.objects.filter(created_date__lte=timezone.now())
+            #userevents = UserEvent.objects.filter(user_num=pk)
+            users = User.objects.all()
+            userevents = UserEvent.objects.all()
+            events = Event.objects.all()
+            return render(request, 'volunteer_activity/manage_activity.html',
+                          {'volunteer_activity': manage_activity, 'users': users, 'userevents': userevents,
+                           'events': events, })
+    else:
+        # edit
+        form = UserEventForm(instance=userevents)
+    return render(request, 'volunteer_activity/volunteer_activity_edit.html', {'form': form})
+
+def event_activity_add(request):
+    if request.method == "POST":
+        form = EventForm(request.POST)
+        if form.is_valid():
+            events = form.save(commit=False)
+            #investments.created_date = timezone.now()
+            events.save()
+            #investments = Investment.objects.filter(acquired_date__lte=timezone.now())
+            users = User.objects.all()
+            userevents = UserEvent.objects.all()
+            events = Event.objects.all()
+            return render(request, 'volunteer_activity/manage_activity.html',
+                          {'volunteer_activity': manage_activity, 'users': users, 'userevents': userevents,
+                           'events': events, })
+    else:
+        form = EventForm()
+        # print("Else")
+    return render(request, 'volunteer_activity/volunteer_activity_add.html', {'form': form})
+
+def event_activity_edit(request, pk):
+    events= get_object_or_404(Event, pk=pk)
+    if request.method == "POST":
+        # update
+        form = EventForm(request.POST, instance=events)
+
+        if form.is_valid():
+            events = form.save(commit=False)
+            #userevents.updated_date = timezone.now()
+            events.save()
+            #userevents = UserEvent.objects.filter(created_date__lte=timezone.now())
+            #userevents = UserEvent.objects.filter(user_num=pk)
+            users = User.objects.all()
+            userevents = UserEvent.objects.all()
+            events = Event.objects.all()
+            return render(request, 'volunteer_activity/manage_activity.html',
+                          {'volunteer_activity': manage_activity, 'users': users, 'userevents': userevents,
+                           'events': events, })
+    else:
+        # edit
+        form = EventForm(instance=events)
+    return render(request, 'volunteer_activity/volunteer_activity_edit.html', {'form': form})
+
+######################################################################
 
 def register(request):
     if request.method == 'POST':
@@ -75,11 +203,14 @@ def contactus(request):
 #     events = Event.objects.all()
 #     return render(request, 'volunteer_activity/events.html',
 #                  {'volunteer_activity': events, 'events': events, })
+
+########### My Activity Page ##################
 @login_required
 def tracking(request):
     userevents = UserEvent.objects.filter(user_num=request.user.pk)
     return render(request, 'volunteer_activity/tracking.html',
                  {'volunteer_activity': tracking, 'userevents': userevents, })
+
 @login_required
 def tracking_edit(request, pk):
     userevents= get_object_or_404(UserEvent, pk=pk)
@@ -99,7 +230,7 @@ def tracking_edit(request, pk):
         # edit
         form = UserEventForm(instance=userevents)
     return render(request, 'volunteer_activity/tracking_edit.html', {'form': form})
-
+#########################
 
 # def event_details(request, pk):
 #     event = get_object_or_404 (Event, slug=event)
@@ -109,14 +240,6 @@ def tracking_edit(request, pk):
 def signup(request):
    return render(request, 'volunteer_activity/signup.html',
                  {'volunteer_activity': signup})
-
-def add_event(request):
-   return render(request, 'volunteer_activity/add_event.html',
-                 {'volunteer_activity': add_event})
-
-def edit_event(request):
-   return render(request, 'volunteer_activity/edit_event.html',
-                 {'volunteer_activity': edit_event})
 
 def pwd_recover(request):
    return render(request, 'volunteer_activity/pwd_recover.html',
