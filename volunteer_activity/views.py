@@ -9,16 +9,6 @@ from .models import Event
 from django.views import generic
 
 
-# def events(request):
-#     events = Event.objects.all()
-#     return render(request, 'volunteer_activity/events.html',
-#                             {'events': events,})
-#
-# def event_details(request, pk):
-#     events = get_object_or_404(Event, pk=pk)
-#     return render(request, 'volunteer_activity/event_details.html',
-#                             {'events': events,})
-
 class IndexView(generic.ListView):
      template_name = 'volunteer_activity/events.html'
      model = Event
@@ -52,9 +42,7 @@ def volunteer_add(request):
         form = UserEmployeeForm(request.POST)
         if form.is_valid():
             users = form.save(commit=False)
-            #investments.created_date = timezone.now()
             users.save()
-            #investments = Investment.objects.filter(acquired_date__lte=timezone.now())
             users = User.objects.all()
             userevents = UserEvent.objects.all()
             events = Event.objects.all()
@@ -94,9 +82,7 @@ def volunteer_activity_add(request):
         form = UserEventEmployeeForm(request.POST)
         if form.is_valid():
             userevents = form.save(commit=False)
-            #investments.created_date = timezone.now()
             userevents.save()
-            #investments = Investment.objects.filter(acquired_date__lte=timezone.now())
             users = User.objects.all()
             userevents = UserEvent.objects.all()
             events = Event.objects.all()
@@ -136,9 +122,7 @@ def event_activity_add(request):
         form = EventForm(request.POST)
         if form.is_valid():
             events = form.save(commit=False)
-            #investments.created_date = timezone.now()
             events.save()
-            #investments = Investment.objects.filter(acquired_date__lte=timezone.now())
             users = User.objects.all()
             userevents = UserEvent.objects.all()
             events = Event.objects.all()
@@ -199,11 +183,6 @@ def contactus(request):
    return render(request, 'volunteer_activity/contactus.html',
                  {'volunteer_activity': contactus})
 
-# def events(request):
-#     events = Event.objects.all()
-#     return render(request, 'volunteer_activity/events.html',
-#                  {'volunteer_activity': events, 'events': events, })
-
 ########### My Activity Page ##################
 @login_required
 def tracking(request):
@@ -232,15 +211,26 @@ def tracking_edit(request, pk):
     return render(request, 'volunteer_activity/tracking_edit.html', {'form': form})
 #########################
 
-# def event_details(request, pk):
-#     event = get_object_or_404 (Event, slug=event)
-#    return render(request, 'volunteer_activity/event_details.html',
-#                  {'volunteer_activity': events,})
-
-def signup(request):
-   return render(request, 'volunteer_activity/signup.html',
-                 {'volunteer_activity': signup})
-
 def pwd_recover(request):
    return render(request, 'volunteer_activity/pwd_recover.html',
                  {'volunteer_activity': pwd_recover})
+
+
+@login_required
+def signup(request):
+    if request.method == "POST":
+        form = UserEventEmployeeForm(request.POST)
+
+        if form.is_valid():
+            userevents = form.save(commit=False)
+            userevents.save()
+            users = User.objects.all()
+            userevents = UserEvent.objects.all()
+            events = Event.objects.all()
+            return render(request, 'volunteer_activity/signup_message.html',
+                          {'users': users, 'userevents': userevents,
+                           'events': events, })
+    else:
+        form = UserEventEmployeeForm()
+        # print("Else")
+    return render(request, 'volunteer_activity/signup.html', {'form': form})
