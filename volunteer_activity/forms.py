@@ -22,7 +22,16 @@ class UserEventForm(forms.ModelForm):
         model = UserEvent
         fields = ('event_num', 'hours',)
 
-		
+class UserEventEmployeeForm(forms.ModelForm):
+    class Meta:
+        model = UserEvent
+        fields = ('user_num', 'event_num', 'hours',)
+
+class UserEmployeeForm(forms.ModelForm):
+    class Meta:
+        model = User
+        fields = ('username', 'first_name', 'last_name', 'email')
+
 class UserRegistrationForm(forms.ModelForm):
     password = forms.CharField(label='Password', widget=forms.PasswordInput)
     password2 = forms.CharField(label='Repeat password', widget=forms.PasswordInput)

@@ -18,7 +18,6 @@ class Profile(models.Model):
     def __str__(self):
         return 'Profile for user {}'.format(self.user.username)
 
-
 class Event(models.Model):
     event_num = models.IntegerField(blank=False, null=False, primary_key=True)
     #event_num = models.ManyToManyField(event_num, through='UserEvent')
@@ -36,8 +35,6 @@ class Event(models.Model):
     def created(self):
         self.start_date = timezone.now()
         self.save()
-
-
 
     def updated(self):
         self.end_date = timezone.now()

@@ -14,12 +14,15 @@ urlpatterns = [
     url(r'^tracking/$', views.tracking, name='tracking'),
     url(r'^tracking/(?P<pk>\d+)/edit/$', views.tracking_edit, name='tracking_edit'),
     url(r'^manage_activity/$', views.manage_activity, name='manage_activity'),
-   # url(r'^manage_activity_volunteer_activity_edit/(?P<pk>\d+)/edit/$', views.manage_activity_volunteer_activity_edit, name='manage_activity_volunteer_activity_edit'),
-    #url(r'^manage_activity_volunteer_edit/(?P<pk>\d+)/edit/$', views.manage_activity_volunteer_edit, name='manage_activity_volunteer_edit'),
-
+    url(r'^manage_activity/(?P<pk>\d+)/edit/$', views.volunteer_activity_edit, name='volunteer_activity_edit'),
+    url(r'^manage_activity/create/$', views.volunteer_activity_add, name='volunteer_activity_add'),
+    url(r'^manage_activity/(?P<pk>\d+)/edit_volunteer/$', views.volunteer_edit, name='volunteer_edit'),
+    url(r'^manage_activity/create_volunteer/$', views.volunteer_add, name='volunteer_add'),
+    url(r'^manage_activity/(?P<pk>\d+)/edit_event/$', views.event_activity_edit, name='event_activity_edit'),
+    url(r'^manage_activity/create_event/$', views.event_activity_add, name='event_activity_add'),
     url(r'^signup/$', views.signup, name='signup'),
-    url(r'^add_event/$', views.add_event, name='add_event'),
-    url(r'^edit_event/$', views.edit_event, name='edit_event'),
+    #url(r'^add_event/$', views.add_event, name='add_event'),
+    #url(r'^edit_event/$', views.edit_event, name='edit_event'),
     url(r'^pwd_recover/$', views.pwd_recover, name='pwd_recover'),
     	
 
