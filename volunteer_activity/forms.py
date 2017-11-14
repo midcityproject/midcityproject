@@ -16,7 +16,6 @@ class EventForm(forms.ModelForm):
         model = Event
         fields = ('organization', 'type', 'location', 'short_description', 'description', 'start_date', 'time', 'number_volunteers',)
 
-
 class UserEventForm(forms.ModelForm):
     class Meta:
         model = UserEvent
