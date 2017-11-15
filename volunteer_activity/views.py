@@ -98,7 +98,7 @@ def volunteer_activity_edit(request, pk):
     userevents= get_object_or_404(UserEvent, pk=pk)
     if request.method == "POST":
         # update
-        form = UserEventForm(request.POST, instance=userevents)
+        form = UserEventEmployeeForm(request.POST, instance=userevents)
 
         if form.is_valid():
             userevents = form.save(commit=False)

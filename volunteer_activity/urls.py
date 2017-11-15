@@ -20,5 +20,4 @@ urlpatterns = [
     url(r'^signup/$', views.signup, name='signup'),
     url(r'^pwd_recover/$', views.pwd_recover, name='pwd_recover'),
     url(r'^events/signup/$', views.signup, name='signup'),
-
     ]
