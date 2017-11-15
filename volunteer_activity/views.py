@@ -225,7 +225,7 @@ def pwd_recover(request):
 
 @login_required
 def signup(request, pk):
-    userevents= get_object_or_404(UserEvent, pk=pk)
+    #events= get_object_or_404(Event, pk=pk)
 
     if request.method == "POST":
         form = UserEventEmployeeForm(request.POST)
