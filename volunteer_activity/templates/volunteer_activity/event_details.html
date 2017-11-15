@@ -11,7 +11,8 @@
 
 
          <div class="w-75 mx-auto">
-           <div class="card w-100 bg-dark text-secondary mb-3">
+           <div style=" box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);"
+           class="card w-100 bg-dark text-secondary mb-3">
              <div class="card-header card-title bg-dark text-info">{{ event.status }}
              </div>
              <div class="card-body"><br>
@@ -32,11 +33,11 @@
               </dl><br>
 
              <!-- <a href="{% url 'volunteer_activity:event_details' event.event_num %}" class="btn btn-outline-info">View details</a> -->
-             <a href="{% url 'volunteer_activity:signup' %}" class="btn btn-info btn-raised center-block">Sign Up for the event</a>
+             <a href="{% url 'volunteer_activity:signup' %}" class="btn active btn-info btn-raised center-block">Sign Up for the event</a>
 
            </div><br>
          </div>
-        <br>
+        <br><br>
        </div>
 
  </div>

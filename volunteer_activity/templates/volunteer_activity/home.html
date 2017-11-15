@@ -4,19 +4,19 @@
 
    <div class="container">
         {% if user.is_authenticated %}
-<br><br><h1 style="text-align:center; font-family:LemonMilk; font-size: 25px" class="text-info">Welcome {{ user.username }}</h1>
+<br><br><h1 style="text-align:center; font-family:LemonMilk; font-size: 27px" class="text-info">Welcome {{ user.username }}</h1>
 
         {% endif %}
         <div class="row">
             <div class="col">
-                <br><br><h1 style="text-align:center; font-family:LemonMilk; font-size: 25px">Upcoming Events</h1><br>
+                <br><br><h1 style="text-align:center; font-family:LemonMilk; font-size: 20px">Upcoming Events</h1><br>
             </div>
 
             <div class="w-100"></div>
 
 
             <div style="text-align:center" class="col" id="link-tags">
-                <table class="table table-bordered table-inverse">
+                <table style=" box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);" class="table table-bordered table-inverse">
                     <thead>
                     <tr class="table table-bordered table-inverse bg-dark text-light">
                         <th class="text-center text-info">EVENT TITLE</th>
@@ -48,13 +48,13 @@
        {% if user.is_authenticated %}
         <div class="row">
             <div class="col">
-                <br><br><h1 style="text-align:center;font-family:LemonMilk; font-size: 25px">My Activity - {{ user.username }}</h1><br>
+                <br><br><h1 style="text-align:center;font-family:LemonMilk; font-size: 20px">My Activity - {{ user.username }}</h1><br>
             </div>
 
             <div class="w-100"></div>
 
             <div style="..." class="col text-center" id="link-tags">
-                <table class="table table-bordered table-inverse">
+                <table style=" box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);" class="table table-bordered table-inverse">
                     <thead>
                     <tr class="table table-bordered bg-dark text-light">
                         <th class="text-center text-info">EVENT TITLE</th>
@@ -65,9 +65,9 @@
                     <tbody>
                     {% for userevent in userevents %}
                         <tr class="">
-                            <td class="text-center text-secondary">{{ userevent.event_num.organization }}</td>
-                            <td class="text-center text-secondary">{{ userevent.event_num.start_date }}</td>
-                            <td class="text-center text-secondary">{{ userevent.hours }}</td>
+                            <td class="text-center bg-dark text-secondary">{{ userevent.event_num.organization }}</td>
+                            <td class="text-center bg-dark text-secondary">{{ userevent.event_num.start_date }}</td>
+                            <td class="text-center bg-dark text-secondary">{{ userevent.hours }}</td>
                         </tr>
                     {% endfor %}
                     </tbody>
@@ -86,7 +86,7 @@
         {% if user.is_staff %}
         <div class="row">
             <div class="col">
-                <br><br><h1 style= "text-align:center;font-family:LemonMilk; font-size: 25px">Manage Activity and Reports</h1>
+                <br><br><h1 style= "text-align:center;font-family:LemonMilk; font-size: 20px">Manage Activity and Reports</h1>
             </div>
 
             <div class="w-100"></div>

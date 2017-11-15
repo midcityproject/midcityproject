@@ -5,20 +5,21 @@
    <div class="container">
      <div class="row">
         <div class="col">
-          <br><br><h1 style="text-align:center; font-size:25px; font-family:LemonMilk;">Events</h1><br>
+          <br><br><h1 style="text-align:center; font-size:27px; font-family:LemonMilk;">Events</h1><br>
         </div>
         <div class="w-100"></div>
 
             {% for event in object_list %}
             <div class="w-75 mx-auto">
-              <div class="card w-100 bg-dark text-secondary mb-3">
+              <div style=" box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);"
+                    class="card w-100 bg-dark text-secondary mb-3">
                 <div class="card-header bg-dark text-secondary">{{ event.start_date }}
                 </div>
                 <div class="card-body">
                 <h4 class="card-title text-info">{{ event.organization }}</h4>
                 <p class="card-text">{{ event.description }}</p>
-                <a style="text-dark" href="{% url 'volunteer_activity:event_details' event.event_num %}" class="btn btn-raised btn-info">View details</a>
-                <a style="text-dark" href="{% url 'volunteer_activity:signup' %}" class="btn btn-raised btn-info">Sign Up</a>
+                <a style="text-dark; margin-right: 15px" href="{% url 'volunteer_activity:event_details' event.event_num %}" class="btn btn-raised active btn-info">View details</a>
+                <a style="text-dark" href="{% url 'volunteer_activity:signup' %}" class="btn btn-raised active btn-info">Sign Up</a>
 
               </div>
             </div>
@@ -28,7 +29,7 @@
             <!-- </tbody>
         </table> -->
 
-    </div>
+    </div><br>
 
 
      </div>
