@@ -20,6 +20,13 @@ class DetailView(generic.DetailView):
     model = Event
     template_name = 'volunteer_activity/event_details.html'
 
+    def get_queryset(self):
+        return Event.objects.all()
+
+# class SignupView(generic.DetailView):
+#     model=UserEvent
+#     template_name = 'volunteer_activity/signup.html'
+
 def home(request):
     userevents = UserEvent.objects.filter(user_num=request.user.pk).order_by('-event_num')[:5]
     events = Event.objects.all().order_by('-start_date')[:5]
@@ -217,7 +224,9 @@ def pwd_recover(request):
 
 
 @login_required
-def signup(request):
+def signup(request, pk):
+    userevents= get_object_or_404(UserEvent, pk=pk)
+
     if request.method == "POST":
         form = UserEventEmployeeForm(request.POST)
 
