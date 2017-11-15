@@ -19,6 +19,4 @@ urlpatterns = [
     url(r'^manage_activity/create_event/$', views.event_activity_add, name='event_activity_add'),
     url(r'^signup/(?P<pk>\d+)$', views.signup, name='signup'),
     url(r'^pwd_recover/$', views.pwd_recover, name='pwd_recover'),
-    # url(r'^events/signup/(?P<pk>\d+)/$', views.signup, name='signup'),
-
     ]
