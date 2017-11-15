@@ -4,12 +4,12 @@
 
    <div class="container">
         {% if user.is_authenticated %}
-<br><br><h1 style="text-align:center; font-family:LemonMilk; font-size: 25px" class="text-info">Welcome {{ user.username }}</h1>
+<br><br><h1 style="text-align:center; font-family:LemonMilk; font-size: 27px" class="text-info">Welcome {{ user.username }}</h1>
 
         {% endif %}
         <div class="row">
             <div class="col">
-                <br><br><h1 style="text-align:center; font-family:LemonMilk; font-size: 25px">Upcoming Events</h1><br>
+                <br><br><h1 style="text-align:center; font-family:LemonMilk; font-size: 20px">Upcoming Events</h1><br>
             </div>
 
             <div class="w-100"></div>
@@ -48,7 +48,7 @@
        {% if user.is_authenticated %}
         <div class="row">
             <div class="col">
-                <br><br><h1 style="text-align:center;font-family:LemonMilk; font-size: 25px">My Activity - {{ user.username }}</h1><br>
+                <br><br><h1 style="text-align:center;font-family:LemonMilk; font-size: 20px">My Activity - {{ user.username }}</h1><br>
             </div>
 
             <div class="w-100"></div>
@@ -86,7 +86,7 @@
         {% if user.is_staff %}
         <div class="row">
             <div class="col">
-                <br><br><h1 style= "text-align:center;font-family:LemonMilk; font-size: 25px">Manage Activity and Reports</h1>
+                <br><br><h1 style= "text-align:center;font-family:LemonMilk; font-size: 20px">Manage Activity and Reports</h1>
             </div>
 
             <div class="w-100"></div>

@@ -33,7 +33,7 @@
  </head>
  <body>
    <div class="container-fluid" id="logo-banner">
-      <h1 class="lead" id="header-title">MID-CITY GIVES BACK</h1>
+      <h1 style=" text-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);" class="lead" id="header-title">MID-CITY GIVES BACK</h1>
    </div>
    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
@@ -60,20 +60,24 @@
            <a class="nav-link" href="{% url 'volunteer_activity:manage_activity' %}">Manage Activity</a>
          </li>
            {% endif %}
-		   {% if user.is_authenticated %}
+		   <!-- {% if user.is_authenticated %}
             <li class="nav-item">
 				<a class="nav-link" href="{% url 'password_change' %}">Change Password</a>
 			</li>
-		 {% endif %}
+		 {% endif %} -->
          <li class="nav-item">
            <a class="nav-link" href="{% url 'volunteer_activity:contactus' %}">Contact Us</a>
          </li>
        </ul>
         <ul class="nav navbar-nav navbar-right">
                 {% if user.is_authenticated %}
-                    <li><a class="btn btn-raised btn-success btn-sm" href="{% url 'logout' %}" role="button">Sign Out</a></li>
+                <li class="nav-item">
+                <a style="margin-left: 13px;" class="btn rounded btn-outline-warning btn-sm" href="{% url 'password_change' %}">Change Password</a>
+                </li>
+                    <li><a style="margin-left: 13px;" class="btn rounded btn-outline-danger btn-sm" href="{% url 'logout' %}" role="button">Sign Out</a></li>
                 {% else %}
-                    <li><a class="btn btn-raised btn-success btn-sm" href="{% url 'volunteer_activity:register' %}" role="button">Register</a>     <a class="btn btn-outline-success btn-sm" href="{% url 'login' %}" role="button">Sign in</a></li>
+                    <li><a class="btn rounded btn-outline-info btn-sm" href="{% url 'volunteer_activity:register' %}" role="button">Register</a>
+                      <a style="margin-left: 13px;" class="btn rounded btn-outline-success btn-sm" href="{% url 'login' %}" role="button">Sign in</a></li>
                 {% endif %}
         </ul>
      </div>

@@ -5,7 +5,7 @@
    <div class="container">
      <div class="row">
         <div class="col">
-          <br><br><h1 style="text-align:center; font-size:25px; font-family:LemonMilk;">Events</h1><br>
+          <br><br><h1 style="text-align:center; font-size:27px; font-family:LemonMilk;">Events</h1><br>
         </div>
         <div class="w-100"></div>
 
@@ -18,8 +18,8 @@
                 <div class="card-body">
                 <h4 class="card-title text-info">{{ event.organization }}</h4>
                 <p class="card-text">{{ event.description }}</p>
-                <a style="text-dark" href="{% url 'volunteer_activity:event_details' event.event_num %}" class="btn btn-raised btn-info">View details</a>
-                <a style="text-dark" href="{% url 'volunteer_activity:signup' %}" class="btn btn-raised btn-info">Sign Up</a>
+                <a style="text-dark; margin-right: 15px" href="{% url 'volunteer_activity:event_details' event.event_num %}" class="btn btn-raised active btn-info">View details</a>
+                <a style="text-dark" href="{% url 'volunteer_activity:signup' %}" class="btn btn-raised active btn-info">Sign Up</a>
 
               </div>
             </div>
@@ -29,7 +29,7 @@
             <!-- </tbody>
         </table> -->
 
-    </div>
+    </div><br>
 
 
      </div>
