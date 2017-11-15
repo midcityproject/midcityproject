@@ -60,6 +60,11 @@
            <a class="nav-link" href="{% url 'volunteer_activity:manage_activity' %}">Manage Activity</a>
          </li>
            {% endif %}
+		   {% if user.is_authenticated %}
+            <li class="nav-item">
+				<a class="nav-link" href="{% url 'password_change' %}">Change Password</a>
+			</li>
+		 {% endif %}
          <li class="nav-item">
            <a class="nav-link" href="{% url 'volunteer_activity:contactus' %}">Contact Us</a>
          </li>
