@@ -66,9 +66,9 @@
        </ul>
         <ul class="nav navbar-nav navbar-right">
                 {% if user.is_authenticated %}
-                    <li><a class="btn btn-outline-success btn-sm" href="{% url 'logout' %}" role="button">Sign Out</a></li>
+                    <li><a class="btn btn-raised btn-success btn-sm" href="{% url 'logout' %}" role="button">Sign Out</a></li>
                 {% else %}
-                    <li><a class="btn btn-outline-success btn-sm" href="{% url 'volunteer_activity:register' %}" role="button">Register</a>     <a class="btn btn-outline-success btn-sm" href="{% url 'login' %}" role="button">Sign in</a></li>
+                    <li><a class="btn btn-raised btn-success btn-sm" href="{% url 'volunteer_activity:register' %}" role="button">Register</a>     <a class="btn btn-outline-success btn-sm" href="{% url 'login' %}" role="button">Sign in</a></li>
                 {% endif %}
         </ul>
      </div>
