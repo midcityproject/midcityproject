@@ -17,8 +17,8 @@ urlpatterns = [
     url(r'^manage_activity/create_volunteer/$', views.volunteer_add, name='volunteer_add'),
     url(r'^manage_activity/(?P<pk>\d+)/edit_event/$', views.event_activity_edit, name='event_activity_edit'),
     url(r'^manage_activity/create_event/$', views.event_activity_add, name='event_activity_add'),
-    url(r'^signup/$', views.signup, name='signup'),
+    url(r'^signup/(?P<pk>\d+)$', views.signup, name='signup'),
     url(r'^pwd_recover/$', views.pwd_recover, name='pwd_recover'),
-    url(r'^events/signup/$', views.signup, name='signup'),
+    # url(r'^events/signup/(?P<pk>\d+)/$', views.signup, name='signup'),
 
     ]
