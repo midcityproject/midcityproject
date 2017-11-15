@@ -114,7 +114,7 @@ def volunteer_activity_edit(request, pk):
                            'events': events, })
     else:
         # edit
-        form = UserEventForm(instance=userevents)
+        form = UserEventEmployeeForm(instance=userevents)
     return render(request, 'volunteer_activity/volunteer_activity_edit.html', {'form': form})
 
 def event_activity_add(request):

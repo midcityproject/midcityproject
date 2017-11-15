@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="844df91a-b037-423d-b294-d20214a94d31" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/volunteer_activity/urls.py" afterPath="$PROJECT_DIR$/volunteer_activity/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/volunteer_activity/views.py" afterPath="$PROJECT_DIR$/volunteer_activity/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -56,8 +54,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/volunteer_activity/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="694">
-              <caret line="121" column="38" lean-forward="true" selection-start-line="121" selection-start-column="38" selection-end-line="121" selection-end-column="38" />
+            <state relative-caret-position="604">
+              <caret line="115" column="14" lean-forward="true" selection-start-line="115" selection-start-column="14" selection-end-line="115" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -189,7 +187,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="127" />
     <option name="y" value="23" />
     <option name="width" value="1553" />
@@ -374,7 +372,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="127" y="23" width="1553" height="948" extended-state="1" />
+    <frame x="127" y="23" width="1553" height="948" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22038385" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -781,8 +779,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/volunteer_activity/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="694">
-          <caret line="121" column="38" lean-forward="true" selection-start-line="121" selection-start-column="38" selection-end-line="121" selection-end-column="38" />
+        <state relative-caret-position="604">
+          <caret line="115" column="14" lean-forward="true" selection-start-line="115" selection-start-column="14" selection-end-line="115" selection-end-column="14" />
           <folding />
         </state>
       </provider>
