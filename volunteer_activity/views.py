@@ -225,21 +225,17 @@ def pwd_recover(request):
 
 @login_required
 def signup(request, pk):
-    #events= get_object_or_404(Event, pk=pk)
-
     if request.method == "POST":
-        form = UserEventEmployeeForm(request.POST)
-
+        form = UserEventSignupForm(request.POST)
         if form.is_valid():
             userevents = form.save(commit=False)
+            userevents.user_num = User.objects.get(username=request.user)
+            userevents.event_num = get_object_or_404(Event, pk=pk)
+            userevents.hours = 0
             userevents.save()
-            users = User.objects.all()
-            userevents = UserEvent.objects.all()
-            events = Event.objects.all()
             return render(request, 'volunteer_activity/signup_message.html',
-                          {'users': users, 'userevents': userevents,
-                           'events': events, })
+                          {'userevent': userevents, })
     else:
-        form = UserEventEmployeeForm()
+        form = UserEventSignupForm()
         # print("Else")
     return render(request, 'volunteer_activity/signup.html', {'form': form})

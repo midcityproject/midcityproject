@@ -26,6 +26,11 @@ class UserEventEmployeeForm(forms.ModelForm):
         model = UserEvent
         fields = ('user_num', 'event_num', 'hours',)
 
+class UserEventSignupForm(forms.ModelForm):
+    class Meta:
+        model = UserEvent
+        fields = ()
+
 class UserEmployeeForm(forms.ModelForm):
     class Meta:
         model = User
