@@ -33,7 +33,7 @@
               </dl><br>
 
              <!-- <a href="{% url 'volunteer_activity:event_details' event.event_num %}" class="btn btn-outline-info">View details</a> -->
-             <a href="{% url 'volunteer_activity:signup' %}" class="btn active btn-info btn-raised center-block">Sign Up for the event</a>
+             <a href="{% url 'volunteer_activity:signup' event.event_num %}" class="btn active btn-info btn-raised center-block">Sign Up for the event</a>
 
            </div><br>
          </div>
