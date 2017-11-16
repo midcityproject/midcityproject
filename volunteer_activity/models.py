@@ -46,7 +46,7 @@ class Event(models.Model):
 
 class UserEvent(models.Model):
     user_num = models.ForeignKey(User,)
-    event_num = models.ForeignKey(Event, primary_key=True)
+    event_num = models.ForeignKey(Event,)
     hours = models.CharField(max_length=10)
 
     def created(self):
