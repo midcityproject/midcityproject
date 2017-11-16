@@ -3,6 +3,9 @@
 {% block content %}
     <h1>Event Signup</h1>
     <br><br><h1 style="text-align:center; font-family:LemonMilk; font-size: 27px" class="text-info">Welcome... {{ user.username }} </h1>
+
+    <h3>You have successfully signied up for... </h3>
+    <p>Click Save to Confirm Signup and an email will be sent to confirm</p>
     <form method="POST" class="...">{% csrf_token %}
         {{ form.as_p }}
         <button type="submit" class="save btn btn-default">Save</button>

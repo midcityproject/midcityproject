@@ -233,8 +233,10 @@ def signup(request, pk):
             userevents.event_num = get_object_or_404(Event, pk=pk)
             userevents.hours = 0
             userevents.save()
-            return render(request, 'volunteer_activity/signup_message.html',
-                          {'userevent': userevents, })
+            userevents = UserEvent.objects.filter(user_num=request.user.pk).order_by('-event_num')[:5]
+            events = Event.objects.all().order_by('-start_date')[:5]
+            return render(request, 'volunteer_activity/home.html',
+                          {'volunteer_activity': home, 'events': events, 'userevents': userevents, })
     else:
         form = UserEventSignupForm()
         # print("Else")
