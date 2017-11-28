@@ -8,6 +8,11 @@
           <br><br><h1 style="text-align:center; font-size:27px; font-family:LemonMilk;">Events</h1><br>
         </div>
         <div class="w-100"></div>
+        <div class="w-75 mx-auto">
+            <form method="GET" action="" id="searchform">
+                <input class="searchfield" id="searchbox" name="q" type="text" value="{{ request.GET.q }}" placeholder="Search Event Title..."/>
+            </form>
+        </div>
 
             {% for event in object_list %}
             <div class="w-75 mx-auto">

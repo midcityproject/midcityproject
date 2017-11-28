@@ -10,11 +10,18 @@ from django.views import generic
 
 
 class IndexView(generic.ListView):
-     template_name = 'volunteer_activity/events.html'
-     model = Event
+    template_name = 'volunteer_activity/events.html'
+    model = Event
 
-     def get_quereyset(self):
-         return Event.objects.all()
+    def get_queryset(self):
+        query = self.request.GET.get('q')
+        if query:
+            return Event.objects.filter(organization__icontains=query)
+        else:
+            return Event.objects.all().order_by('-start_date')
+
+#     def get_quereyset(self):
+#         return Event.objects.all()
 
 class DetailView(generic.DetailView):
     model = Event
@@ -38,9 +45,9 @@ def aboutus(request):
                  {'volunteer_activity': aboutus})
 ######################### Manage Activity Page ######################
 def manage_activity(request):
-    users = User.objects.all()
-    userevents = UserEvent.objects.all()
-    events = Event.objects.all()
+    users = User.objects.all().order_by('username')
+    userevents = UserEvent.objects.all().order_by('-user_num')
+    events = Event.objects.all().order_by('-start_date')
     return render(request, 'volunteer_activity/manage_activity.html',
                  {'volunteer_activity': manage_activity, 'users': users,'userevents': userevents, 'events': events,})
 
@@ -50,9 +57,9 @@ def volunteer_add(request):
         if form.is_valid():
             users = form.save(commit=False)
             users.save()
-            users = User.objects.all()
-            userevents = UserEvent.objects.all()
-            events = Event.objects.all()
+            users = User.objects.all().order_by('username')
+            userevents = UserEvent.objects.all().order_by('-user_num')
+            events = Event.objects.all().order_by('-start_date')
             return render(request, 'volunteer_activity/manage_activity.html',
                           {'volunteer_activity': manage_activity, 'users': users, 'userevents': userevents,
                            'events': events, })
@@ -73,9 +80,9 @@ def volunteer_edit(request, pk):
             users.save()
             #userevents = UserEvent.objects.filter(created_date__lte=timezone.now())
             #userevents = UserEvent.objects.filter(user_num=pk)
-            users = User.objects.all()
-            userevents = UserEvent.objects.all()
-            events = Event.objects.all()
+            users = User.objects.all().order_by('username')
+            userevents = UserEvent.objects.all().order_by('-user_num')
+            events = Event.objects.all().order_by('-start_date')
             return render(request, 'volunteer_activity/manage_activity.html',
                           {'volunteer_activity': manage_activity, 'users': users, 'userevents': userevents,
                            'events': events, })
@@ -90,9 +97,9 @@ def volunteer_activity_add(request):
         if form.is_valid():
             userevents = form.save(commit=False)
             userevents.save()
-            users = User.objects.all()
-            userevents = UserEvent.objects.all()
-            events = Event.objects.all()
+            users = User.objects.all().order_by('username')
+            userevents = UserEvent.objects.all().order_by('-user_num')
+            events = Event.objects.all().order_by('-start_date')
             return render(request, 'volunteer_activity/manage_activity.html',
                           {'volunteer_activity': manage_activity, 'users': users, 'userevents': userevents,
                            'events': events, })
@@ -113,9 +120,9 @@ def volunteer_activity_edit(request, pk):
             userevents.save()
             #userevents = UserEvent.objects.filter(created_date__lte=timezone.now())
             #userevents = UserEvent.objects.filter(user_num=pk)
-            users = User.objects.all()
-            userevents = UserEvent.objects.all()
-            events = Event.objects.all()
+            users = User.objects.all().order_by('username')
+            userevents = UserEvent.objects.all().order_by('-user_num')
+            events = Event.objects.all().order_by('-start_date')
             return render(request, 'volunteer_activity/manage_activity.html',
                           {'volunteer_activity': manage_activity, 'users': users, 'userevents': userevents,
                            'events': events, })
@@ -130,9 +137,9 @@ def event_activity_add(request):
         if form.is_valid():
             events = form.save(commit=False)
             events.save()
-            users = User.objects.all()
-            userevents = UserEvent.objects.all()
-            events = Event.objects.all()
+            users = User.objects.all().order_by('username')
+            userevents = UserEvent.objects.all().order_by('-user_num')
+            events = Event.objects.all().order_by('-start_date')
             return render(request, 'volunteer_activity/manage_activity.html',
                           {'volunteer_activity': manage_activity, 'users': users, 'userevents': userevents,
                            'events': events, })
@@ -153,9 +160,9 @@ def event_activity_edit(request, pk):
             events.save()
             #userevents = UserEvent.objects.filter(created_date__lte=timezone.now())
             #userevents = UserEvent.objects.filter(user_num=pk)
-            users = User.objects.all()
-            userevents = UserEvent.objects.all()
-            events = Event.objects.all()
+            users = User.objects.all().order_by('username')
+            userevents = UserEvent.objects.all().order_by('-user_num')
+            events = Event.objects.all().order_by('-start_date')
             return render(request, 'volunteer_activity/manage_activity.html',
                           {'volunteer_activity': manage_activity, 'users': users, 'userevents': userevents,
                            'events': events, })
