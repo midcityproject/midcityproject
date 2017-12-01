@@ -4,9 +4,27 @@
 
    <div class="container">
         {% if user.is_authenticated %}
-<br><br><h1 style="text-align:center; font-family:LemonMilk; font-size: 27px" class="text-info">Welcome {{ user.username }}</h1>
+<br><br><h1 style="text-align:center; font-family:LemonMilk; font-size: 27px" class="text-danger">Welcome {{ user.username }}</h1><br><br>
 
         {% endif %}
+
+        {% if user.is_staff %}
+        <div class="row">
+            <!-- <div class="col">
+                <br><br><h1 style= "text-align:center;font-family:LemonMilk; font-size: 20px">Manage Activity and Reports</h1>
+            </div>
+
+            <div class="w-100"></div> -->
+
+            <div class="w-100"></div>
+
+            <div class="col text-center">
+                <a href="{% url 'volunteer_activity:manage_activity' %}" class="btn btn-raised btn-info center-block">View Reports</a><br><br>
+            </div>
+
+        </div>
+        {% endif %}
+
         <div class="row">
             <div class="col">
                 <br><br><h1 style="text-align:center; font-family:LemonMilk; font-size: 20px">Upcoming Events</h1><br>
@@ -80,25 +98,10 @@
 
       <br>  <div class="col text-center">
             <a href="{% url 'volunteer_activity:tracking' %}" class="btn btn-raised btn-info center-block">Track My Hours</a><br><br>
-        </div>
+        </div><br>
         {% endif %}
 
-        {% if user.is_staff %}
-        <div class="row">
-            <div class="col">
-                <br><br><h1 style= "text-align:center;font-family:LemonMilk; font-size: 20px">Manage Activity and Reports</h1>
-            </div>
 
-            <div class="w-100"></div>
-
-            <div class="w-100"></div>
-
-            <div class="col text-center">
-                <a href="{% url 'volunteer_activity:manage_activity' %}" class="btn btn-raised btn-info center-block">View Reports</a><br><br>
-            </div>
-
-        </div>
-        {% endif %}
 
    </div>
 
