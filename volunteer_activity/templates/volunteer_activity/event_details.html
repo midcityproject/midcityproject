@@ -10,30 +10,35 @@
      <div class="w-100"></div>
 
 
-         <div class="w-75 mx-auto">
+         <div class="col-md-10 mx-auto">
            <div style=" box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);"
            class="card w-100 bg-dark text-secondary mb-3">
-             <div class="card-header card-title bg-dark text-info">{{ event.status }}
+             <div class="card-header card-title bg-dark text-warning">{{ event.status }}
              </div>
              <div class="card-body"><br>
-             <h2 style="font-size:25px; font-family:LemonMilk;" class="card-title text-secondary">{{ event.organization }}</h4><br>
-             <dl class="row">
-                   <dt class="col-sm-3 card-text font-weight-bold">Category</dt>
-                   <dd class="col-sm-9 card-text">{{ event.type}}</dd>
-                   <dt class="col-sm-3 card-text font-weight-bold">Loction:</dt>
-                   <dd class="col-sm-9 card-text">{{ event.location}}</dd>
-                   <dt class="col-sm-3 card-text font-weight-bold">Volunteers needed:</dt>
-                   <dd class="col-sm-9 card-text">{{ event.number_volunteers}}</dd>
-                   <dt class="col-sm-3 card-text font-weight-bold">Start Date:</dt>
-                   <dd class="col-sm-9 card-text">{{ event.start_date}}</dd>
-                   <dt class="col-sm-3 card-text font-weight-bold">Time:</dt>
-                   <dd class="col-sm-9 card-text">{{ event.time}}</dd>
-                   <dt class="col-sm-3 card-text font-weight-bold">Description:</dt>
-                   <dd class="col-sm-9 card-text">{{ event.description}}</dd>
+             <h2 style="font-size:25px; font-family:LemonMilk;" class="card-title text-info">{{ event.organization }}</h4><br>
+             <dl class="row mx-auto">
+                   <dt class="col-sm-3 card-font card-text font-weight-bold">Category</dt>
+                   <dd class="col-sm-9 card-font-mini card-text">{{ event.type}}</dd>
+                   <dt class="col-sm-3 card-font card-text font-weight-bold">Loction:</dt>
+                   <dd class="col-sm-9 card-font-mini card-text">{{ event.location}}</dd>
+                   <dt class="col-sm-3 card-font card-text font-weight-bold">Volunteers needed:</dt>
+                   <dd class="col-sm-9 card-font-mini card-text">{{ event.number_volunteers}}</dd>
+                   <dt class="col-sm-3 card-font card-text font-weight-bold">Start Date:</dt>
+                   <dd class="col-sm-9 card-font-mini card-text">{{ event.start_date}}</dd>
+                   <dt class="col-sm-3 card-font card-text font-weight-bold">Time:</dt>
+                   <dd class="col-sm-9 card-font-mini card-text">{{ event.time}}</dd>
               </dl><br>
-
+               <dl class="row mx-auto">
+                 <dt class="col-sm-3 card-text card-font font-weight-bold">Description:</dt>
+              </dl>
+              <dl class="row mx-auto" style="margin-top:10px">
+                   <dd class="col-sm-12 card-font-mini card-text">{{ event.description}}</dd>
+              </dl>
+            </div>
              <!-- <a href="{% url 'volunteer_activity:event_details' event.event_num %}" class="btn btn-outline-info">View details</a> -->
-             <a href="{% url 'volunteer_activity:signup' event.event_num %}" class="btn active btn-info btn-raised center-block">Sign Up for the event</a>
+            <div class="mx-auto" style="margin-bottom:15px">
+             <a href="{% url 'volunteer_activity:signup' event.event_num %}" class="btn btn-success  center-block">Sign Up for the event</a>
 
            </div><br>
          </div>

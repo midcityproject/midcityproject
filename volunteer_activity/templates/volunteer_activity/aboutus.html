@@ -1,18 +1,45 @@
 {% extends "volunteer_activity/base.html" %}
-
+{% load staticfiles %}
 {% block content %}
    <div class="container">
      <div class="row">
         <div class="col">
           <br><br><h1 style="text-align:center; font-family:LemonMilk; font-size: 25px">About Us</h1>
-        </div>
+        </div><br>
 
         <div class="w-100"></div>
 
-        <div style="text-align:center;" class="col text-center" id="link-tags">
-          <p style="text-align: left; padding-left: 15%; padding-right: 15%; padding-top: 30px">Mid-City Gives Back is a volunteer portal organization that helps volunteers to signup and track their volunteering hours. Mid-city  project is being handled by team 4 from MSD class</p><br>
-          <p style="text-align: left; padding-left: 15%; padding-right: 15%">This is just a test document. Getting ready to make the first push. This about us page contains description about the main features of the project and why this organization is started.
-            This also includes the mission statement of the organization and also covers the different types of organiztions that are a part of our Mid city organization</p><br> <!-- List of events, linked to event detials page. -->
+      <div class="col-md-8 mx-auto" style="margin-top: 30px">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel"style=" box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100"  src="{% static 'images/aboutus_v1.jpg' %}" alt="First slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="{% static 'images/aboutus_v2.jpg' %}" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="{% static 'images/aboutus_v3.jpg' %}" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="{% static 'images/aboutus_v4.jpg' %}" alt="Fourth slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="{% static 'images/aboutus_v5.jpg' %}" alt="Fifth slide">
+            </div>
+
+          </div>
+        </div>
+      </div>
+        <!-- <div class="w-100"></div> -->
+
+
+        <div class="col-md-4 mx-auto" style="margin-top: 25px; margin-bottom: 40px " id="link-tags">
+          <p>We believe everyone should have the opportunity to make a difference in the lives of people and society. That's why we make it easy for good people to connect with good cause.
+            Mid-City Gives Back is a fictitious non-profit organization which helps organizations find volunteer activities in the metro area.</p><br>
+          <p>Started in 2012, Mid-City Gives Back hosted various events in collaboration with several non-profit and service oriented organizations.
+          We at Mid-City Gives Back encourage every individual to give some of their time to the society. This portal helps the kind hearted find organizations
+        that host various volunteer events and the current volunteering members to track their hours of service.</p><br> <!-- List of events, linked to event detials page. -->
         </div>
 
      </div>

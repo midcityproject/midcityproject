@@ -7,23 +7,25 @@
 
     <form method="POST" class="...">{% csrf_token %}
       <div class="form-group">
-        <label for="{{ form.username.label_tag }}</label>
+        <label class="font-weight-bold" for="{{ form.username.label_tag }}</label>
         <input type="text" class="form-control" id="{{ form.username }}
       </div>
       <div class="form-group">
-        <label for="{{ form.first_name.label_tag }}</label>
+        <label class="font-weight-bold" for="{{ form.first_name.label_tag }}</label>
         <input type="text" class="form-control" id="{{ form.first_name }}
       </div>
       <div class="form-group">
-        <label for="{{ form.last_name.label_tag }}</label>
+        <label class="font-weight-bold" for="{{ form.last_name.label_tag }}</label>
         <input type="text" class="form-control" id="{{ form.last_name }}
       </div>
       <div class="form-group">
-        <label for="{{ form.email.label_tag }}</label>
+        <label class="font-weight-bold" for="{{ form.email.label_tag }}</label>
         <input type="text" class="form-control" id="{{ form.email }}
       </div><br>
 
-        <button type="submit" class="btn btn-success btn-raised">Save</button>
+        <div class="col text-center">
+          <button type="submit" class="btn btn-success btn-raised">Save</button>
+        </div>
     </form>
   </div><br><br>
 {% endblock %}

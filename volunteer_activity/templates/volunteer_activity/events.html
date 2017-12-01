@@ -8,23 +8,38 @@
           <br><br><h1 style="text-align:center; font-size:27px; font-family:LemonMilk;">Events</h1><br>
         </div>
         <div class="w-100"></div>
-        <div class="w-75 mx-auto">
-            <form method="GET" action="" id="searchform">
-                <input class="searchfield" id="searchbox" name="q" type="text" value="{{ request.GET.q }}" placeholder="Search Event Title..."/>
-            </form>
+
+        <div class="container">
+	<div class="row">
+        <div class="col-md-4 mx-auto" style="margin-bottom:40px">
+    		<!-- <h2>Custom search field</h2> -->
+            <!-- <div class="custom-search-input"> -->
+                <form class="input-group col-md-12" method="GET" action="">
+                    <input type="text" class="form-control input-lg" name="q" type="text" value="{{ request.GET.q }}" placeholder="Search Event title" />
+                </form>
+            <!-- </div> -->
         </div>
+	</div>
+</div>
+
+        <!-- <div class="col-md-12 mx-auto" style="margin-bottom:20px">
+            <form class="custom-search-input" method="GET" action="" id="searchform">
+                <input class="custom-search-input" id="searchbox" name="q" type="text" value="{{ request.GET.q }}" placeholder="Search Event Title..."/>
+            </form>
+        </div> -->
 
             {% for event in object_list %}
-            <div class="w-75 mx-auto">
-              <div style=" box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);"
-                    class="card w-100 bg-dark text-secondary mb-3">
+            <div class="col-md-4 mx-auto">
+              <div
+                    class="card-1 w-100 bg-dark text-secondary mb-3">
                 <div class="card-header bg-dark text-secondary">{{ event.start_date }}
                 </div>
                 <div class="card-body">
-                <h4 class="card-title text-info">{{ event.organization }}</h4>
-                <p class="card-text">{{ event.description }}</p>
-                <a style="text-dark; margin-right: 15px" href="{% url 'volunteer_activity:event_details' event.event_num %}" class="btn btn-raised active btn-info">View details</a>
-                <a style="text-dark" href="{% url 'volunteer_activity:signup' event.event_num %}" class="btn btn-raised active btn-info">Sign Up</a>
+                <h4 class="card-title text-info font-weight-bold ">{{ event.organization }}</h4>
+                <p class="card-text">{{ event.short_description }}</p>
+
+                <a style="text-dark; margin-right: 15px" href="{% url 'volunteer_activity:event_details' event.event_num %}" class="btn btn-info">View details</a>
+                <a style="text-dark" href="{% url 'volunteer_activity:signup' event.event_num %}" class="btn btn-success">Sign Up</a>
 
               </div>
             </div>
