@@ -74,8 +74,8 @@
   color: white;
 }
 
-.fa-youtube {
-  background: #bb0000;
+.fa-linkedin {
+  background: #0077b5;
   color: white;
 }
 
@@ -100,6 +100,13 @@
   font-size: 15px;
 }
 
+.body{
+    background-image: url("{% static 'images/bg1.jpg' %}" );
+    background-repeat:repeat-x;
+    background-attachment:fixed;
+    background-size:cover;
+}
+
 
 
      @font-face { font-family: LemonMilk; src: url("{% static 'images/LemonMilk.otf' %}"); }
@@ -108,7 +115,7 @@
 
    </style>
  </head>
- <body>
+ <body class="body">
    <div class="container-fluid" id="logo-banner">
       <h1 style=" text-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);" class="lead" id="header-title">MID-CITY GIVES BACK</h1>
    </div>
