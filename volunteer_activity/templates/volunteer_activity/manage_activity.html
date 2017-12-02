@@ -8,10 +8,19 @@
                 <br><br><h1 style="text-align:center; font-family:LemonMilk; font-size: 27px">Manage Activity</h1><br>
             </div>
         </div>
+
+        <div class="row">
+            <div class="col text-center">
+                <a style="margin-right: 25px" href="{% url 'admin:index' %}" class="btn btn-raised btn-info center-block">Admin and Reports</a>
+            </div>
+        </div>
+
         <div class="row">
             <div class="col">
                <br><br><h2 style="text-align:center; font-family:LemonMilk; font-size: 20px">Volunteers</h2><br>
             </div>
+
+
         </div>
 
         <div style=" box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22); overflow:scroll; max-height:400px;" class="col text-center" id="link-tags">
@@ -41,7 +50,6 @@
 
         <div class="col text-center">
             <a style="margin-right: 25px" href="{% url 'volunteer_activity:volunteer_add' %}" class="btn btn-raised btn-info center-block">Add Volunteer</a>
-               <a class="btn btn-raised btn-info center-block">Export Volunteer Report</a><br><br>
         </div>
 
 <!-- ........................................................................................................................................... -->
@@ -79,8 +87,7 @@
 
         <div class="col text-center">
             <a style="margin-right: 25px" href="{% url 'volunteer_activity:volunteer_activity_add' %}" class="btn btn-raised btn-info center-block">Add Activity Record</a>
-              <a class="btn btn-raised btn-info center-block">Export Activity Report</a><br><br>
-        </div>
+        </div
 <!-- .................................................................................................................................... -->
 
 
@@ -117,7 +124,6 @@
 
         <div class="col text-center">
             <a style="margin-right: 25px" href="{% url 'volunteer_activity:event_activity_add' %}" class="btn btn-raised btn-info center-block">Add Event</a>
-             <a class="btn btn-info btn-raised center-block">Export Event Report</a><br><br>
         </div>
 
     </div><br><br>

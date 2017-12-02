@@ -4,6 +4,18 @@
 
    <div class="container">
      <div class="row">
+         <div class="col">
+             <br><br><h1 style="text-align:center; font-family:LemonMilk; font-size: 27px">User Information - {{ user.username }} </h1><br>
+         </div>
+        <div class="w-100"></div>
+
+         <div class="col">
+             <br><br><p style="text-align:center;"><a  class="btn rounded btn-outline-warning btn-sm"
+                            href="{% url 'password_change' %}">Change Password</a><br></p>
+         </div>
+
+        <div class="w-100"></div>
+
         <div class="col">
           <br><br><h1 style="text-align:center; font-family:LemonMilk; font-size: 27px">Activity - {{ user.username }} </h1><br>
         </div>
