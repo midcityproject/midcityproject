@@ -5,10 +5,17 @@
    <div class="container">
      <div class="row">
          <div class="col">
-             <br><br><h1 style="text-align:center; font-family:LemonMilk; font-size: 27px">User Information - {{ user.username }} </h1><br>
+             <br><br><h1 style="text-align:center; font-family:LemonMilk; font-size: 27px">Volunteer Information - {{ user.username }} </h1><br>
          </div>
         <div class="w-100"></div>
-
+        <div style="margin:auto;">
+                 <h5>First Name: {{ user.first_name }}</h5>
+                 <h5>Last Name: {{ user.last_name }}</h5>
+                 <h5>Email: {{ user.email }}</h5>
+                 <h5>Date Joined: {{ user.date_joined }}</h5>
+                 <h5>Last Login: {{ user.last_login }}</h5>
+         </div>
+        <div class="w-100"></div>
          <div class="col">
              <br><br><p style="text-align:center;"><a  class="btn rounded btn-outline-warning btn-sm"
                             href="{% url 'password_change' %}">Change Password</a><br></p>

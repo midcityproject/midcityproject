@@ -3,11 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="844df91a-b037-423d-b294-d20214a94d31" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/volunteer_activity/admin.py" afterPath="$PROJECT_DIR$/volunteer_activity/admin.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/base.html" afterPath="$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/manage_activity.html" afterPath="$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/manage_activity.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/home.html" afterPath="$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/home.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/tracking.html" afterPath="$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/tracking.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/volunteer_activity/views.py" afterPath="$PROJECT_DIR$/volunteer_activity/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,38 +21,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="forms.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/volunteer_activity/forms.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#24#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/volunteer_activity/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="401">
-              <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#33#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="admin.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/volunteer_activity/admin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="735">
-              <caret line="49" column="45" lean-forward="true" selection-start-line="49" selection-start-column="45" selection-end-line="49" selection-end-column="45" />
+            <state relative-caret-position="345">
+              <caret line="23" column="34" lean-forward="true" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/home.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="525">
+              <caret line="35" column="70" lean-forward="true" selection-start-line="35" selection-start-column="70" selection-end-line="35" selection-end-column="70" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -64,9 +47,10 @@
         <entry file="file://$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/base.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="436">
-              <caret line="67" column="46" lean-forward="false" selection-start-line="67" selection-start-column="46" selection-end-line="67" selection-end-column="46" />
+              <caret line="151" column="46" lean-forward="false" selection-start-line="151" selection-start-column="46" selection-end-line="151" selection-end-column="46" />
               <folding>
                 <element signature="n#style#0;n#a#0;n#li#0;n#ul#1;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1512242046000" expanded="true" signature="2756:5803" ph="..." />
               </folding>
             </state>
           </provider>
@@ -75,11 +59,26 @@
       <file leaf-file-name="tracking.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/tracking.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+            <state relative-caret-position="165">
+              <caret line="11" column="59" lean-forward="true" selection-start-line="11" selection-start-column="59" selection-end-line="11" selection-end-column="59" />
               <folding>
-                <element signature="n#style#0;n#p#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h1#0;n#div#4;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#div#4;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h1#0;n#div#6;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#8;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <marker date="1512244698000" expanded="false" signature="1288:1360" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="volunteer_activity_edit.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/volunteer_activity_edit.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="14" lean-forward="true" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+              <folding>
+                <element signature="n#style#0;n#h1#0;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -87,6 +86,16 @@
       </file>
       <file leaf-file-name="volunteer_edit.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/volunteer_edit.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="465">
+              <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="volunteer_add.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/volunteer_add.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
               <caret line="8" column="14" lean-forward="false" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
@@ -99,7 +108,7 @@
         <entry file="file://$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/manage_activity.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="315">
-              <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -119,20 +128,10 @@
         <entry file="file://$PROJECT_DIR$/mid_city/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="360">
-              <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/volunteer_activity/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="566">
-              <caret line="49" column="43" lean-forward="false" selection-start-line="49" selection-start-column="43" selection-end-line="49" selection-end-column="43" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -177,13 +176,11 @@
         <option value="$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/manage_activity_volunteer_activity_edit.html" />
         <option value="$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/manage_activity_volunteer_edit.html" />
         <option value="$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/register.html" />
-        <option value="$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/volunteer_activity_edit.html" />
         <option value="$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/volunteer_activity_add.html" />
         <option value="$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/volunteer_edit.html" />
         <option value="$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/volunteer_add.html" />
         <option value="$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/event_activity_add.html" />
         <option value="$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/event_activity_edit.html" />
-        <option value="$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/home.html" />
         <option value="$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/signup_message.html" />
         <option value="$PROJECT_DIR$/volunteer_activity/urls.py" />
         <option value="$PROJECT_DIR$/volunteer_activity/forms.py" />
@@ -194,6 +191,8 @@
         <option value="$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/manage_activity.html" />
         <option value="$PROJECT_DIR$/volunteer_activity/admin.py" />
         <option value="$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/base.html" />
+        <option value="$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/home.html" />
+        <option value="$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/volunteer_activity_edit.html" />
         <option value="$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/tracking.html" />
       </list>
     </option>
@@ -204,7 +203,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="392" />
     <option name="y" value="32" />
     <option name="width" value="1288" />
@@ -401,7 +400,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="392" y="32" width="1288" height="948" extended-state="1" />
+    <frame x="392" y="32" width="1288" height="948" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30096307" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -463,7 +462,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
           <caret line="29" column="22" lean-forward="false" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
-          <folding />
+          <folding>
+            <marker date="1512242045000" expanded="true" signature="736:1643" ph="..." />
+            <marker date="1512242045000" expanded="true" signature="1440:1501" ph="..." />
+            <marker date="1512242045000" expanded="true" signature="1525:1584" ph="..." />
+            <marker date="1512242045000" expanded="true" signature="1608:1643" ph="..." />
+            <marker date="1512242045000" expanded="true" signature="1676:1948" ph="..." />
+            <marker date="1512242045000" expanded="true" signature="1826:1846" ph="..." />
+            <marker date="1512242045000" expanded="true" signature="1870:1890" ph="..." />
+            <marker date="1512242045000" expanded="true" signature="1914:1948" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -485,7 +493,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="29" column="22" lean-forward="true" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
-          <folding />
+          <folding>
+            <marker date="1512242045000" expanded="true" signature="736:1643" ph="..." />
+            <marker date="1512242045000" expanded="true" signature="1440:1501" ph="..." />
+            <marker date="1512242045000" expanded="true" signature="1525:1584" ph="..." />
+            <marker date="1512242045000" expanded="true" signature="1608:1643" ph="..." />
+            <marker date="1512242045000" expanded="true" signature="1676:1948" ph="..." />
+            <marker date="1512242045000" expanded="true" signature="1826:1846" ph="..." />
+            <marker date="1512242045000" expanded="true" signature="1870:1890" ph="..." />
+            <marker date="1512242045000" expanded="true" signature="1914:1948" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -608,20 +625,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/events.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="26" column="61" lean-forward="true" selection-start-line="26" selection-start-column="61" selection-end-line="26" selection-end-column="61" />
           <folding>
-            <marker date="1511817676000" expanded="false" signature="172:202" ph="..." />
+            <marker date="1512242046000" expanded="false" signature="172:202" ph="..." />
           </folding>
         </state>
       </provider>
@@ -692,14 +701,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/volunteer_activity_edit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/edit_event.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -716,27 +717,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/volunteer_add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="14" lean-forward="false" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/volunteer_edit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="14" lean-forward="false" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/volunteer_activity/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="566">
           <caret line="49" column="43" lean-forward="false" selection-start-line="49" selection-start-column="43" selection-end-line="49" selection-end-column="43" />
-          <folding />
+          <folding>
+            <marker date="1512242045000" expanded="true" signature="736:1643" ph="..." />
+            <marker date="1512242045000" expanded="true" signature="1440:1501" ph="..." />
+            <marker date="1512242045000" expanded="true" signature="1525:1584" ph="..." />
+            <marker date="1512242045000" expanded="true" signature="1608:1643" ph="..." />
+            <marker date="1512242045000" expanded="true" signature="1676:1948" ph="..." />
+            <marker date="1512242045000" expanded="true" signature="1826:1846" ph="..." />
+            <marker date="1512242045000" expanded="true" signature="1870:1890" ph="..." />
+            <marker date="1512242045000" expanded="true" signature="1914:1948" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -746,6 +740,7 @@
           <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
           <folding>
             <element signature="e#0#24#0" expanded="true" />
+            <marker date="1512242045000" expanded="true" signature="1170:1631" ph="..." />
           </folding>
         </state>
       </provider>
@@ -756,6 +751,23 @@
           <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
           <folding>
             <element signature="e#0#33#0" expanded="true" />
+            <marker date="1512242046000" expanded="true" signature="5861:6571" ph="..." />
+            <marker date="1512242046000" expanded="true" signature="7654:7691" ph="..." />
+            <marker date="1512242046000" expanded="true" signature="7787:8587" ph="..." />
+            <marker date="1512242046000" expanded="true" signature="7820:8445" ph="..." />
+            <marker date="1512242046000" expanded="true" signature="7909:8445" ph="..." />
+            <marker date="1512242046000" expanded="true" signature="8612:8727" ph="..." />
+            <marker date="1512242046000" expanded="true" signature="8815:9025" ph="..." />
+            <marker date="1512242046000" expanded="true" signature="9074:9870" ph="..." />
+            <marker date="1512242046000" expanded="true" signature="9159:9711" ph="..." />
+            <marker date="1512242046000" expanded="true" signature="9269:9711" ph="..." />
+            <marker date="1512242046000" expanded="true" signature="9721:9786" ph="..." />
+            <marker date="1512242046000" expanded="true" signature="9923:10042" ph="..." />
+            <marker date="1512242046000" expanded="true" signature="10085:10937" ph="..." />
+            <marker date="1512242046000" expanded="true" signature="10118:10789" ph="..." />
+            <marker date="1512242046000" expanded="true" signature="10195:10789" ph="..." />
+            <marker date="1512242046000" expanded="true" signature="10799:10860" ph="..." />
+            <marker date="1512242046000" expanded="true" signature="10963:11360" ph="..." />
           </folding>
         </state>
       </provider>
@@ -771,7 +783,7 @@
     <entry file="file://$PROJECT_DIR$/mid_city/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
-          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
@@ -781,38 +793,76 @@
     <entry file="file://$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/manage_activity.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/volunteer_activity/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="49" column="45" lean-forward="true" selection-start-line="49" selection-start-column="45" selection-end-line="49" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/base.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="436">
-          <caret line="67" column="46" lean-forward="false" selection-start-line="67" selection-start-column="46" selection-end-line="67" selection-end-column="46" />
+          <caret line="151" column="46" lean-forward="false" selection-start-line="151" selection-start-column="46" selection-end-line="151" selection-end-column="46" />
           <folding>
             <element signature="n#style#0;n#a#0;n#li#0;n#ul#1;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1512242046000" expanded="true" signature="2756:5803" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/volunteer_activity/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="34" lean-forward="true" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="70" lean-forward="true" selection-start-line="35" selection-start-column="70" selection-end-line="35" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/volunteer_activity_edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="14" lean-forward="true" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+          <folding>
+            <element signature="n#style#0;n#h1#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/volunteer_edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/volunteer_add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="14" lean-forward="false" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/volunteer_activity/templates/volunteer_activity/tracking.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+        <state relative-caret-position="165">
+          <caret line="11" column="59" lean-forward="true" selection-start-line="11" selection-start-column="59" selection-end-line="11" selection-end-column="59" />
           <folding>
-            <element signature="n#style#0;n#p#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h1#0;n#div#4;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#4;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h1#0;n#div#6;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#8;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <marker date="1512244698000" expanded="false" signature="1288:1360" ph="..." />
           </folding>
         </state>
       </provider>
