@@ -1,7 +1,7 @@
 {% extends "volunteer_activity/base.html" %}
 
 {% block content %}
-    <div class="container col-sm-6">
+    <div class="container col-sm-4">
       <br><br><h1 style="text-align:center; font-family:LemonMilk; font-size: 27px">Sign in</h1><br>
         <div class="row">
             <div class="col">
@@ -16,7 +16,7 @@
                     <div class="form-group">
                       <label for="{{ form.username.label_tag }}</label>
                       <input type="text" class="form-control" id="{{ form.username }}
-                      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                      <small id="emailHelp" class="form-text text-muted"</small>
                     </div>
                     <div class="form-group">
                       <label for="{{ form.password.label_tag }}</label>
@@ -40,11 +40,15 @@
                              <td>{{ form.password }}</td>
                          </tr>
                     </table> -->
-                <input class="btn btn-raised btn-success" type="submit" value="login"/>
-                <input type="hidden" name="next" value="{{ next }}"/>
+
               </form>
-				<p><a href="{% url "password_reset" %}">Forgot password?</a></p>
+              <div class="text-center">
+              <input class="btn btn-raised btn-success" type="submit" value="login"/>
+              <input type="hidden" name="next" value="{{ next }}"/>
+
+        <p><a href="{% url "password_reset" %}">Forgot password?</a></p>
             </div>
+          </div>
             </div>
         </div>
     </div>
