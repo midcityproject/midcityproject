@@ -144,20 +144,12 @@
            <a class="nav-link" href="{% url 'volunteer_activity:manage_activity' %}">Manage Activity</a>
          </li>
            {% endif %}
-		   <!-- {% if user.is_authenticated %}
-            <li class="nav-item">
-				<a class="nav-link" href="{% url 'password_change' %}">Change Password</a>
-			</li>
-		 {% endif %} -->
          <li class="nav-item">
            <a class="nav-link" href="{% url 'volunteer_activity:contactus' %}">Contact Us</a>
          </li>
        </ul>
         <ul class="nav navbar-nav navbar-right">
                 {% if user.is_authenticated %}
-                <li class="nav-item">
-                <a style="margin-left: 13px;" class="btn rounded btn-outline-warning btn-sm" href="{% url 'password_change' %}">Change Password</a>
-                </li>
                     <li><a style="margin-left: 13px;" class="btn rounded btn-outline-danger btn-sm" href="{% url 'logout' %}" role="button">Sign Out</a></li>
                 {% else %}
                     <li><a class="btn rounded btn-outline-info btn-sm" href="{% url 'volunteer_activity:register' %}" role="button">Register</a>
