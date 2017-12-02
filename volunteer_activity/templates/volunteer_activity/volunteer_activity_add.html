@@ -1,9 +1,27 @@
 {% extends 'volunteer_activity/base.html' %}
 
 {% block content %}
-    <h1>Sign Up a Volunteer For an Event</h1>
+<div class="container col-sm-4">
+
+  <br><br><h1 style="text-align:center; font-family:LemonMilk; font-size: 27px">Add Volunteer Activity</h1><br><br>
     <form method="POST" class="...">{% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit" class="save btn btn-default">Save</button>
+        <!-- {{ form.as_p }} -->
+        <div class="form-group">
+          <label class="font-weight-bold"for="{{ form.user_num.label_tag }}</label>
+          <select class="form-control" id="{{ form.user_num }}
+        </select>
+        </div>
+        <div class="form-group">
+          <label class="font-weight-bold" for="{{ form.event_num.label_tag }}</label>
+          <select class="form-control" id="{{ form.event_num }}
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="font-weight-bold"  for="{{ form.hours.label_tag }}</label>
+          <input type="text" class="form-control" id="{{ form.hours }}
+        </div><br>
+        <div class="col text-center">
+        <button type="submit" class="save btn btn-raised btn-success">Update</button>
+      </div>
     </form>
 {% endblock %}

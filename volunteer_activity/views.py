@@ -149,7 +149,7 @@ def event_activity_add(request):
     else:
         form = EventForm()
         # print("Else")
-    return render(request, 'volunteer_activity/volunteer_activity_add.html', {'form': form})
+    return render(request, 'volunteer_activity/event_activity_add.html', {'form': form})
 
 def event_activity_edit(request, pk):
     events= get_object_or_404(Event, pk=pk)
@@ -172,7 +172,7 @@ def event_activity_edit(request, pk):
     else:
         # edit
         form = EventForm(instance=events)
-    return render(request, 'volunteer_activity/volunteer_activity_edit.html', {'form': form})
+    return render(request, 'volunteer_activity/event_activity_edit.html', {'form': form})
 
 ######################################################################
 
