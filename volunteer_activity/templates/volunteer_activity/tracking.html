@@ -5,19 +5,41 @@
    <div class="container">
      <div class="row">
          <div class="col">
-             <br><br><h1 style="text-align:center; font-family:LemonMilk; font-size: 27px">Volunteer Information - {{ user.username }} </h1><br>
+             <br><br><h1 style="text-align:center; font-family:LemonMilk; font-size: 27px">Volunteer Information </h1><br><br>
          </div>
         <div class="w-100"></div>
-        <div style="margin:auto;">
+        <!-- <div style="margin:auto;">
                  <h5>First Name: {{ user.first_name }}</h5>
                  <h5>Last Name: {{ user.last_name }}</h5>
                  <h5>Email: {{ user.email }}</h5>
                  <h5>Date Joined: {{ user.date_joined }}</h5>
                  <h5>Last Login: {{ user.last_login }}</h5>
-         </div>
+         </div> -->
+
+         <div class="col-md-6 mx-auto">
+           <div style=" box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);"
+           class="card w-100 bg-dark text-secondary mb-3">
+             <div class="card-body"><br>
+             <h2  style="font-size:25px; font-family:LemonMilk;" class="col card-title text-info">{{ user.username }}</h4><br>
+             <dl class="row mx-auto">
+                   <dt class="col-sm-3 card-font-mini card-text">First Name</dt>
+                   <dd class="col-sm-9 card-font-mini card-text">{{ user.first_name }}</dd>
+                   <dt class="col-sm-3 card-font-mini card-text font-weight-bold">Last Name</dt>
+                   <dd class="col-sm-9 card-font-mini card-text">{{ user.last_name }}</dd>
+                   <dt class="col-sm-3 card-font-mini card-text font-weight-bold">Email</dt>
+                   <dd class="col-sm-9 card-font-mini card-text">{{ user.email }}</dd>
+                   <dt class="col-sm-3 card-font-mini card-text font-weight-bold">Date Joined</dt>
+                   <dd class="col-sm-9 card-font-mini card-text">{{ user.date_joined }}</dd>
+                   <dt class="col-sm-3 card-font-mini card-text font-weight-bold">Last Login</dt>
+                   <dd class="col-sm-9 card-font-mini card-text">{{ user.last_login }}</dd>
+              </dl><br>
+            </div>
+          </div>
+        </div>
+
         <div class="w-100"></div>
          <div class="col">
-             <br><br><p style="text-align:center;"><a  class="btn rounded btn-outline-warning btn-sm"
+             <br><br><p style="text-align:center;"><a  class="btn btn-raised rounded btn-warning btn-sm"
                             href="{% url 'password_change' %}">Change Password</a><br></p>
          </div>
 
