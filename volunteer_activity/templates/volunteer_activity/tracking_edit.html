@@ -5,12 +5,9 @@
 
   <br><br><h1 style="text-align:center; font-family:LemonMilk; font-size: 27px">Edit Activity</h1><br><br>
     <form method="POST" class="...">{% csrf_token %}
-        <!-- {{ form.as_p }} -->
-        <div class="form-group">
-          <label class="font-weight-bold" for="{{ form.event_num.label_tag }}</label>
-          <select class="form-control" id="{{ form.event_num }}
-          </select>
-        </div>
+      <div style="visibility: hidden; display: none; ">
+        {{ form.as_p }}
+      </div>
         <div class="form-group">
           <label class="font-weight-bold"  for="{{ form.hours.label_tag }}</label>
           <input type="text" class="form-control" id="{{ form.hours }}
