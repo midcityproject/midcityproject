@@ -1,5 +1,8 @@
 from django.utils import timezone
 from .models import *
+from django.contrib import messages
+from django.core.mail import send_mail
+from django.conf import settings
 from django.shortcuts import render, get_object_or_404
 from django.shortcuts import redirect
 from django.contrib.auth.decorators import login_required
@@ -243,6 +246,12 @@ def signup(request, pk):
             userevents.event_num = get_object_or_404(Event, pk=pk)
             userevents.hours = 0
             userevents.save()
+            #send_mail(subject, message, from_email, to_list, fail_silently=true)
+            subject = "Mid-City Gives Back"
+            message = "Thank you for signing up for an event"
+            from_email = settings.EMAIL_HOST_USER
+            to_list = [request.user.email]
+            send_mail(subject, message, from_email, to_list, fail_silently=True)
             userevents = UserEvent.objects.filter(user_num=request.user.pk).order_by('-event_num')[:5]
             events = Event.objects.all().order_by('-start_date')[:5]
             return render(request, 'volunteer_activity/home.html',
@@ -263,3 +272,4 @@ def some_view(request):
     writer.writerow(['Second row', 'A', 'B', 'C', '"Testing"', "Here's a quote"])
 
     return response
+
