@@ -35,7 +35,7 @@
                 <div class="card-header bg-dark text-secondary">{{ event.start_date }}
                 </div>
                 <div class="card-body">
-                <h4 class="card-title text-info font-weight-bold ">{{ event.organization }}</h4>
+                <a style="text-decoration:none" class="card-title card-font-events text-info font-weight-bold " href="{% url 'volunteer_activity:event_details' event.event_num %}">{{ event.organization }}</a>
                 <p class="card-text">{{ event.short_description }}</p>
 
                 <a style="text-dark; margin-right: 15px" href="{% url 'volunteer_activity:event_details' event.event_num %}" class="btn btn-info">View details</a>
