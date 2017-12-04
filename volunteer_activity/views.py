@@ -12,6 +12,7 @@ from .models import Event
 from django.views import generic
 import csv
 from django.http import HttpResponse
+from geopy import geocoders
 
 
 
