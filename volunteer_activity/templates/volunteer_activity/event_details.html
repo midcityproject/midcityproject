@@ -1,7 +1,42 @@
 {% extends "volunteer_activity/base.html" %}
 
 {% block content %}
-
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+<meta charset="utf-8">
+<script>
+  
+  var map;
+  
+  function initMap() {
+  var map;
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 10,
+          center: {lat: 41.2915193, lng: -96.3614327}
+        });
+          codeAddress(); 
+      }
+  
+  function codeAddress() {
+	var geocoder = new google.maps.Geocoder();
+	map = new google.maps.Map(document.getElementById('map') , {
+		zoom: 15,
+		center: {lat: -34.397, lng: 150.644}
+		
+	});
+    var address = "{{ event.location}}";
+    geocoder.geocode( { 'address': address}, function(results, status) {
+      if (status == 'OK') {
+        map.setCenter(results[0].geometry.location);
+        var marker = new google.maps.Marker({
+            map: map,
+            position: results[0].geometry.location
+        });
+      } else {
+        alert('Geocode was not successful for the following reason: ' + status);
+      }
+    });
+  }
+</script>
 <div class="container">
   <div class="row">
      <div class="col">
@@ -16,6 +51,7 @@
              <div class="card-header card-title bg-dark text-warning">{{ event.status }}
              </div>
              <div class="card-body"><br>
+			 <div id="map" onload="codeAddress()" style="width: 240px; float:right; height: 240px;" ></div>
              <h2 style="font-size:25px; font-family:LemonMilk;" class="card-title text-info">{{ event.organization }}</h4><br>
              <dl class="row mx-auto">
                    <dt class="col-sm-3 card-font card-text font-weight-bold">Category</dt>
@@ -49,6 +85,6 @@
 
 
   </div>
-
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAYCiTaPolA8Y-JbDjXTmfpjuJ-FaJAR8Q&libraries=places&callback=initMap" async defer></script>
 
 {% endblock %}
